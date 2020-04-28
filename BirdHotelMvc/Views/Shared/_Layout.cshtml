@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/SiteStyle/css/all.min.css" rel="stylesheet" />
+
+    <link href="~/SiteStyle/plugin/date/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+    <link href="~/SiteStyle/plugin/Magnific/magnific-popup.css" rel="stylesheet" />
+    <link href="~/SiteStyle/plugin/lightSlider/lightslider.min.css" rel="stylesheet" />
+    <link href="~/SiteStyle/plugin/Select2/select2.min.css" rel="stylesheet" />
+    <link href="~/SiteStyle/plugin/OwlCarsoul/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/SiteStyle/plugin/jqueryUI/jquery-ui.css" rel="stylesheet" />
+    <link href="~/SiteStyle/css/Language/Arabic/Arabic.css" rel="stylesheet" />
+    @*<link href="~/SiteStyle/css/Language/English/English.css" rel="stylesheet" />*@
+    <link href="~/SiteStyle/css/Style.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/jquery")
+    <script src="~/SiteStyle/plugin/Select2/select2.min.js"></script>
+    <script src="~/SiteStyle/plugin/Select2/select2.full.min.js"></script>
+    <script src="~/SiteStyle/plugin/lightSlider/lightslider.min.js"></script>
+    <script src="~/SiteStyle/plugin/date/moment.min.js"></script>
+    <script src="~/SiteStyle/plugin/date/bootstrap-material-datetimepicker.js"></script>
+    <script src="~/SiteStyle/plugin/Magnific/jquery.magnific-popup.min.js"></script>
+    <script src="~/SiteStyle/plugin/OwlCarsoul/owl.carousel.min.js"></script>
+    <script src="~/SiteStyle/plugin/jqueryUI/jquery-ui.min.js"></script>
+
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="Header row">
+        <div class="container">
+            <div class="col-md-6 text-left">
+                <div class="dropdown StyleDropDown">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                        <i class="fas fa-chevron-down"></i>
+                        العربية
+                        <i class="fas fa-globe-americas"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">العربية</a></li>
+                        <li><a href="#">الانجليزية</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown StyleDropDown">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                        <i class="fas fa-chevron-down"></i>
+                        (EGP)
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">EGP</a></li>
+                        <li><a href="#">DOllar</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown StyleDropDown Login">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                        Login
+                        <i class="far fa-user"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="@Url.Action("Index", "AirPlane")"><img src='~/SiteStyle/images/Logo-1.png' /></a>
+            </div>
+            <div class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "AirPlane")</li>
+                    <li>@Html.ActionLink("AirPlane", "Index", "AirPlane")</li>
+                    <li>@Html.ActionLink("Hotel", "Index", "Hotel")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="body-content">
+        @RenderBody()
+        <div class="row margin-0-l-r FooterSec">
+            <div class="container">
+                <div class="row margin-0-l-r">
+                    <div class="col-md-4">
+                        <img src="~/SiteStyle/images/Logo2.png" />
+                        <div class="CollcetCollapse">
+                            <div class="CollcetCollapse">
+                                <h6 class="CollapseLabel MobileOnly">LEARN MORE <i class="fas fa-chevron-down pull-right"></i></h6>
+                                <a href="#">Flights to Saudi Arabia</a>
+                                <a href="#">Flights to Kuwait</a>
+                                <a href="#">Flights to United Arab Emirates</a>
+                                <a href="#">Flights to Qatar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <label class="NoMobile">LEARN MORE</label>
+                        <div class="CollcetCollapse">
+                            <div class="CollcetCollapse">
+                                <h6 class="CollapseLabel MobileOnly">LEARN MORE <i class="fas fa-chevron-down pull-right"></i></h6>
+                                <a href="#">Flights to Turkey</a>
+                                <a href="#">Flights to United States</a>
+                                <a href="#">Flights to Morocco</a>
+                                <a href="#">Flights to Bahrain</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="NoMobile">EXPLORE</label>
+                        <div class="CollcetCollapse">
+                            <h6 class="CollapseLabel MobileOnly">EXPLORE <i class="fas fa-chevron-down pull-right"></i></h6>
+                            <div class="Content">
+                                <a href="#">Flights to Oman</a>
+                                <a href="#">Flights to Jordan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row margin-0-l-r Social">
+                <ul>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+                <p class="text-center"><a href="https://dynawix.com/">Dynawix</a> © 2020</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".select2").select2({
+                allowClear: true
+            });
+        });
+    </script>
+    <script>
+
+        $('input[type=datetime]').bootstrapMaterialDatePicker
+            ({
+                clearButton: true,
+                format: 'DD MM YYYY - HH:mm'
+                //format: 'dd DD MM YYYY - HH:mm'
+            });
+        $('input[type=time]').bootstrapMaterialDatePicker
+            ({
+                date: false,
+                shortTime: true,
+                format: 'HH:mm'
+            });
+        $('input[type=date]').bootstrapMaterialDatePicker
+            ({
+                time: false,
+                clearButton: true,
+                //minDate : new Date()
+            });
+    </script>
+    <script>
+        $(document).ready(function () {
+            if ($(window).width() < 991) {
+
+                $("h6.CollapseLabel").siblings().slideToggle();
+                $("h6.CollapseLabel").parent().removeClass("CollpaseFooter");
+            }
+        });
+        $("h6.CollapseLabel").click(function () {
+            if ($(window).width() < 991) {
+                $(this).siblings().slideToggle();
+                $(this).parent().toggleClass("CollpaseFooter");
+            }
+
+        })
+    </script>
+    @*<script>
+        $(function () {
+            $("input[type=date]").datepicker();
+        });
+    </script>*@
+    <script>
+        $(document).on('click', '.dropdown-menu', function (e) {
+            e.stopPropagation();
+        });
+    </script>
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

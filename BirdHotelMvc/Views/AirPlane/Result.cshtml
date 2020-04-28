@@ -1,0 +1,677 @@
+﻿
+@{
+    ViewBag.Title = "Result";
+}
+
+<div class="row margin-0-l-r TopBar MobileOnly">
+    <div class="pull-left"><a class="OpenSearch"><i class="fas fa-search"></i> Modify Search </a></div>
+    <div class="pull-right"><a class="Filter"><i class="fas fa-filter"></i>Filter</a></div>
+</div>
+<div class="row margin-0-l-r MobileOnly">
+    <div class="conatinerOption">
+        <button class="Chepest">
+            <img src="~/SiteStyle/images/money.png" />
+            <div class="detailsConatinerOption">
+                <h5>Cheapest</h5>
+                <h5>3,000 EGP</h5>
+            </div>
+        </button>
+        <button class="Faster">
+            <img src="~/SiteStyle/images/airplane.png" />
+            <div class="detailsConatinerOption">
+                <h5>Faster</h5>
+                <h5>4,325 EGP</h5>
+            </div>
+        </button>
+    </div>
+</div>
+@Html.Partial("_Search")
+
+<div class="container width92">
+
+    <div class="row margin-0-l-r NoMobile">
+        <div class="col-md-4">
+            <div class="row margin-0-l-r">
+                <div class="conatinerOption">
+                    <button class="Chepest">
+                        <img src="~/SiteStyle/images/money.png" />
+                        <div class="detailsConatinerOption">
+                            <h5>Cheapest</h5>
+                            <h5>3,000 EGP</h5>
+                        </div>
+                    </button>
+                    <button class="Faster">
+                        <img src="~/SiteStyle/images/airplane.png" />
+                        <div class="detailsConatinerOption">
+                            <h5>Faster</h5>
+                            <h5>4,325 EGP</h5>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="row margin-0-l-r">
+                <div class="ResultAirPlane BirdSlider owl-carousel NoMobile">
+                    <div class="item">
+                        <img src="~/SiteStyle/images/egyptairlogo.png" />
+                        <div class="itemContent">
+                            <h5>Egyptair</h5>
+                            <h5 class="bluecolor">3,000 EGP</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="~/SiteStyle/images/GF.png" />
+                        <div class="itemContent">
+                            <h5>Egyptair</h5>
+                            <h5 class="bluecolor">3,000 EGP</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="~/SiteStyle/images/NP.png" />
+                        <div class="itemContent">
+                            <h5>Egyptair</h5>
+                            <h5 class="bluecolor">3,000 EGP</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="~/SiteStyle/images/egyptairlogo.png" />
+                        <div class="itemContent">
+                            <h5>Egyptair</h5>
+                            <h5 class="bluecolor">3,000 EGP</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="~/SiteStyle/images/GF.png" />
+                        <div class="itemContent">
+                            <h5>Egyptair</h5>
+                            <h5 class="bluecolor">3,000 EGP</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="~/SiteStyle/images/NP.png" />
+                        <div class="itemContent">
+                            <h5>Egyptair</h5>
+                            <h5 class="bluecolor">3,000 EGP</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row margin-0-l-r">
+        <div class="ContentSecAir">
+            <div class="width20 Filtercntainer">
+                <form class="SecCheckOut">
+                    <div class="DivContent row SidebarCheckBox">
+                        <h5 class="bold">Stops</h5>
+                        <p>
+                            <input type="checkbox" id="Stop1" name="Stop1" value="Stop1">
+                            <label class="bluecolor" for="Stop1">
+                                Direct
+                            </label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="Stop2" name="Stop2" value="Stop2">
+                            <label class="bluecolor" for="Stop2">
+                               2 Stop
+                            </label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="Stop3" name="Stop3" value="Stop3">
+                            <label class="bluecolor" for="Stop3">
+                                3 Stop
+
+                            </label>
+                        </p>
+                    </div>
+                    <div class="DivContent row SidebarCheckBox">
+                        <h5 class="bold">Price Rane</h5>
+                        <div class="price-range-slider">
+
+                            <p class="range-value">
+                                <input type="text" id="amount" readonly>
+                            </p>
+                            <div id="slider-range" class="range-bar"></div>
+
+                        </div>
+                    </div>
+                    <div class="DivContent row SidebarCheckBox">
+                        <h5 class="bold">Airlines</h5>
+                        <div class="row margin-0-l-r">
+                            <div class="pull-left">
+                                <input type="checkbox" id="EgyptAir" name="EgyptAir" value="EgyptAir">
+                                <label class="bluecolor" for="EgyptAir">EgyptAir</label>
+                            </div>
+                            <div class="pull-right">
+                                <h5 class="text-gray">3,500 EGP</h5>
+                            </div>
+                        </div>
+                        <div class="row margin-0-l-r">
+                            <div class="pull-left">
+                                <input type="checkbox" id="AirArabia" name="AirArabia" value="AirArabia">
+                                <label class="bluecolor" for="AirArabia">Air Arabia</label>
+                            </div>
+                            <div class="pull-right">
+                                <h5 class="text-gray">3,500 EGP</h5>
+                            </div>
+                        </div>
+                        <div class="row margin-0-l-r">
+                            <div class="pull-left">
+                                <input type="checkbox" id="Emirates" name="Emirates" value="Emirates">
+                                <label class="bluecolor" for="Emirates">Emirates</label>
+                            </div>
+                            <div class="pull-right">
+                                <h5 class="text-gray">3,500 EGP</h5>
+                            </div>
+                        </div>
+                        <div class="row margin-0-l-r">
+                            <div class="pull-left">
+                                <input type="checkbox" id="EtihadAirways" name="EtihadAirways" value="EtihadAirways">
+                                <label class="bluecolor" for="EtihadAirways">Etihad Airways</label>
+                            </div>
+                            <div class="pull-right">
+                                <h5 class="text-gray">2,500 EGP</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="DivContent row SidebarCheckBox">
+                        <h5 class="bold">Class</h5>
+                        <p>
+                            <input type="checkbox" id="Aclass" name="Aclass" value="Aclass">
+                            <label class="bluecolor" for="Aclass">
+                                A Class
+                            </label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="Bclass" name="Bclass" value="Bclass">
+                            <label class="bluecolor" for="Bclass">
+                                B Class
+                            </label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="Economy" name="Economy" value="Economy">
+                            <label class="bluecolor" for="Economy">
+                                Economy
+                            </label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="VP" name="VP" value="VP">
+                            <label class="bluecolor" for="VP">
+                                VP
+                            </label>
+                        </p>
+                    </div>
+
+                    <button type="button" class="AcceptFilters">Clear Filters</button>
+                </form>
+            </div>
+            <div class="width60">
+           <div class="SelectedSecOptionSelect">
+
+           </div>
+           <div class="UnSelectedSecOptionSelect">
+               <h5 class='TitleSelect'>Please Select the flight</h5>
+               <div class="SecOptionSelect text-center row margin-0-l-r">
+                   <div class="row margin-0-l-r">
+                       <div class="col-xs-9 padding-5-l-r padding-top-btn-24">
+                           <div class="row margin-0-l-r">
+                               <div class="col-xs-5 no-padding">
+                                   <div class="row margin-0-l-r ImgDes">
+                                       <img src="~/SiteStyle/images/MS.png" />
+                                       <div class="ContentWord">
+                                           <h5>EgyptAir</h5>
+                                           <h6>SV308</h6>
+                                           <h6>(Airbus A330-300)</h6>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-xs-1 no-padding SidebarCheckBox itemCheckBox">
+                                   <input type="checkbox" id="select1" name="select" value="select">
+                                   <label for="select1"></label>
+
+                               </div>
+                               <div class="col-xs-6 no-padding LineDirectContainer">
+                                   <div class="row margin-0-l-r">
+                                       <div class="col-xs-4 no-padding">
+                                           <h5>12:00</h5>
+                                       </div>
+                                       <div class="col-xs-4 no-padding">
+                                           <h6>Total</h6>
+                                           <h6>02h 25m</h6>
+                                       </div>
+                                       <div class="col-xs-4 no-padding">
+                                           <h5>18:30</h5>
+                                       </div>
+                                   </div>
+                                   <div class="row margin-0-l-r">
+                                       <div class="LineDirect"></div>
+                                   </div>
+                                   <div class="row margin-0-l-r">
+                                       <div class="col-xs-4 no-padding">
+                                           <h6>Kuwait</h6>
+                                       </div>
+                                       <div class="col-xs-4 no-padding">
+                                           <h6>Direct</h6>
+                                       </div>
+                                       <div class="col-xs-4 no-padding">
+                                           <h6>Cairo</h6>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+
+                       </div>
+                       <div class="col-xs-3 padding-5-l-r padding-top-btn-10  PriceChoose">
+                           <p>$Recoverable</p>
+                           <h3><span>EGP</span> 3,250</h3>
+                           <h6>Total Price</h6>
+                           <button class="BookChoose">BOOKING NOW</button>
+                           <button class="BookChoose BookChooseGray">BOOKED</button>
+                       </div>
+                   </div>
+                   <div class="row margin-0-l-r detailsSecOptionSelectCntent">
+                       <div class="col-md-10 col-md-offset-1 no-padding">
+                           <div class="row margin-0-l-r text-left">
+
+
+                               <div class="col-xs-3 padding-5-l-r">
+                                   <div class="bluecolor font9">
+                                       <img src="~/SiteStyle/images/Icon awesome-plane-departure.png" />
+                                       Departure
+                                   </div>
+                                   <div class="bold">5 March 2020</div>
+                                   <div class="smallGray">Cairo Airport</div>
+                                   <div class="bold font9">15 : 05</div>
+                               </div>
+                               <div class="col-xs-3 padding-5-l-r">
+                                   <div class="bluecolor font9">
+                                       <img src="~/SiteStyle/images/Icon awesome-plane-arrival.png" />
+                                       arrival
+                                   </div>
+                                   <div class="bold">6 March 2020</div>
+                                   <div class="smallGray">Cairo Airport</div>
+                                   <div class="bold font9">15 : 05</div>
+                               </div>
+                               <div class="col-xs-3 padding-5-l-r">
+                                   <div class="bluecolor font9">
+                                       <img src="~/SiteStyle/images/suitcase.png" />
+                                       Luggage
+                                   </div>
+                                   <div class="bold">45 KG</div>
+                                   <div class="smallGray">+1 Personal bag</div>
+                               </div>
+                               <div class="col-xs-3 padding-5-l-r">
+                                   <div class="bluecolor font9">
+                                       <img src="~/SiteStyle/images/Icon awesome-plane-arrival.png" />
+                                       Luggage
+                                   </div>
+                                   <div class="bold">32</div>
+                                   <div class="smallGray">Avilable</div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                       <div class="row margin-0-l-r detailsSecOptionSelect">
+                           <button class="ShowDetails"><i class="fas fa-chevron-down"></i> VIEW DETAILS</button>
+                           <button class="ShowLess"><i class="fas fa-chevron-up"></i> Show Less</button>
+                       </div>
+                   </div>
+
+               <div class="SecOptionSelect text-center row margin-0-l-r">
+                   <div class="row margin-0-l-r">
+                       <div class="col-xs-9 padding-5-l-r padding-top-btn-24">
+                           <div class="row margin-0-l-r">
+                               <div class="col-xs-5 no-padding">
+                                   <div class="row margin-0-l-r ImgDes">
+                                       <img src="~/SiteStyle/images/MS.png" />
+                                       <div class="ContentWord">
+                                           <h5>EgyptAir</h5>
+                                           <h6>SV308</h6>
+                                           <h6>(Airbus A330-300)</h6>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-xs-1 no-padding SidebarCheckBox itemCheckBox">
+                                   <input type="checkbox" id="select11" name="select" value="select">
+                                   <label for="select11"></label>
+
+                               </div>
+                               <div class="col-xs-6 no-padding LineDirectContainer">
+                                   <div class="row margin-0-l-r">
+                                       <div class="col-xs-4 no-padding">
+                                           <h5>12:00</h5>
+                                       </div>
+                                       <div class="col-xs-4 no-padding">
+                                           <h6>Total</h6>
+                                           <h6>02h 25m</h6>
+                                       </div>
+                                       <div class="col-xs-4 no-padding">
+                                           <h5>18:30</h5>
+                                       </div>
+                                   </div>
+                                   <div class="row margin-0-l-r">
+                                       <div class="LineDirect"></div>
+                                   </div>
+                                   <div class="row margin-0-l-r">
+                                       <div class="col-xs-4 no-padding">
+                                           <h6>Kuwait</h6>
+                                       </div>
+                                       <div class="col-xs-4 no-padding">
+                                           <h6>Direct</h6>
+                                       </div>
+                                       <div class="col-xs-4 no-padding">
+                                           <h6>Cairo</h6>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+
+                       </div>
+                       <div class="col-xs-3 padding-5-l-r padding-top-btn-10  PriceChoose">
+                           <p>$Recoverable</p>
+                           <h3><span>EGP</span> 3,250</h3>
+                           <h6>Total Price</h6>
+                           <button class="BookChoose">BOOKING NOW</button>
+                           <button class="BookChoose BookChooseGray">BOOKED</button>
+                       </div>
+                   </div>
+                   <div class="row margin-0-l-r detailsSecOptionSelectCntent">
+                       <div class="col-md-10 col-md-offset-1 no-padding">
+                           <div class="row margin-0-l-r text-left">
+
+
+                               <div class="col-xs-3 padding-5-l-r">
+                                   <div class="bluecolor font9">
+                                       <img src="~/SiteStyle/images/Icon awesome-plane-departure.png" />
+                                       Departure
+                                   </div>
+                                   <div class="bold">5 March 2020</div>
+                                   <div class="smallGray">Cairo Airport</div>
+                                   <div class="bold font9">15 : 05</div>
+                               </div>
+                               <div class="col-xs-3 padding-5-l-r">
+                                   <div class="bluecolor font9">
+                                       <img src="~/SiteStyle/images/Icon awesome-plane-arrival.png" />
+                                       arrival
+                                   </div>
+                                   <div class="bold">6 March 2020</div>
+                                   <div class="smallGray">Cairo Airport</div>
+                                   <div class="bold font9">15 : 05</div>
+                               </div>
+                               <div class="col-xs-3 padding-5-l-r">
+                                   <div class="bluecolor font9">
+                                       <img src="~/SiteStyle/images/suitcase.png" />
+                                       Luggage
+                                   </div>
+                                   <div class="bold">45 KG</div>
+                                   <div class="smallGray">+1 Personal bag</div>
+                               </div>
+                               <div class="col-xs-3 padding-5-l-r">
+                                   <div class="bluecolor font9">
+                                       <img src="~/SiteStyle/images/Icon awesome-plane-arrival.png" />
+                                       Luggage
+                                   </div>
+                                   <div class="bold">32</div>
+                                   <div class="smallGray">Avilable</div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="row margin-0-l-r detailsSecOptionSelect">
+                       <button class="ShowDetails"><i class="fas fa-chevron-down"></i> VIEW DETAILS</button>
+                       <button class="ShowLess"><i class="fas fa-chevron-up"></i> Show Less</button>
+                   </div>
+               </div>
+               <div class="SecOptionSelect text-center row margin-0-l-r">
+                   <div class="row margin-0-l-r">
+                       <div class="col-xs-9 padding-5-l-r padding-top-btn-24">
+                           <div class="row margin-0-l-r">
+                               <div class="col-xs-5 no-padding">
+                                   <div class="row margin-0-l-r ImgDes">
+                                       <img src="~/SiteStyle/images/MS.png" />
+                                       <div class="ContentWord">
+                                           <h5>EgyptAir</h5>
+                                           <h6>SV308</h6>
+                                           <h6>(Airbus A330-300)</h6>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-xs-1 no-padding SidebarCheckBox itemCheckBox">
+                                   <input type="checkbox" id="select12" name="select" value="select">
+                                   <label for="select12"></label>
+
+                               </div>
+                               <div class="col-xs-6 no-padding LineDirectContainer">
+                                   <div class="row margin-0-l-r">
+                                       <div class="col-xs-4 no-padding">
+                                           <h5>12:00</h5>
+                                       </div>
+                                       <div class="col-xs-4 no-padding">
+                                           <h6>Total</h6>
+                                           <h6>02h 25m</h6>
+                                       </div>
+                                       <div class="col-xs-4 no-padding">
+                                           <h5>18:30</h5>
+                                       </div>
+                                   </div>
+                                   <div class="row margin-0-l-r">
+                                       <div class="LineDirect"></div>
+                                   </div>
+                                   <div class="row margin-0-l-r">
+                                       <div class="col-xs-4 no-padding">
+                                           <h6>Kuwait</h6>
+                                       </div>
+                                       <div class="col-xs-4 no-padding">
+                                           <h6>Direct</h6>
+                                       </div>
+                                       <div class="col-xs-4 no-padding">
+                                           <h6>Cairo</h6>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+
+                       </div>
+                       <div class="col-xs-3 padding-5-l-r padding-top-btn-10  PriceChoose">
+                           <p>$Recoverable</p>
+                           <h3><span>EGP</span> 3,250</h3>
+                           <h6>Total Price</h6>
+                           <button class="BookChoose">BOOKING NOW</button>
+                           <button class="BookChoose BookChooseGray">BOOKED</button>
+                       </div>
+                   </div>
+                   <div class="row margin-0-l-r detailsSecOptionSelectCntent">
+                       <div class="col-md-10 col-md-offset-1 no-padding">
+                           <div class="row margin-0-l-r text-left">
+
+
+                               <div class="col-xs-3 padding-5-l-r">
+                                   <div class="bluecolor font9">
+                                       <img src="~/SiteStyle/images/Icon awesome-plane-departure.png" />
+                                       Departure
+                                   </div>
+                                   <div class="bold">5 March 2020</div>
+                                   <div class="smallGray">Cairo Airport</div>
+                                   <div class="bold font9">15 : 05</div>
+                               </div>
+                               <div class="col-xs-3 padding-5-l-r">
+                                   <div class="bluecolor font9">
+                                       <img src="~/SiteStyle/images/Icon awesome-plane-arrival.png" />
+                                       arrival
+                                   </div>
+                                   <div class="bold">6 March 2020</div>
+                                   <div class="smallGray">Cairo Airport</div>
+                                   <div class="bold font9">15 : 05</div>
+                               </div>
+                               <div class="col-xs-3 padding-5-l-r">
+                                   <div class="bluecolor font9">
+                                       <img src="~/SiteStyle/images/suitcase.png" />
+                                       Luggage
+                                   </div>
+                                   <div class="bold">45 KG</div>
+                                   <div class="smallGray">+1 Personal bag</div>
+                               </div>
+                               <div class="col-xs-3 padding-5-l-r">
+                                   <div class="bluecolor font9">
+                                       <img src="~/SiteStyle/images/Icon awesome-plane-arrival.png" />
+                                       Luggage
+                                   </div>
+                                   <div class="bold">32</div>
+                                   <div class="smallGray">Avilable</div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="row margin-0-l-r detailsSecOptionSelect">
+                       <button class="ShowDetails"><i class="fas fa-chevron-down"></i> VIEW DETAILS</button>
+                       <button class="ShowLess"><i class="fas fa-chevron-up"></i> Show Less</button>
+                   </div>
+               </div>
+               </div>
+                
+
+            </div>
+            <div class="width20 NoMobile">
+                <div class="Sec ImgCompany">
+                    <img src="~/SiteStyle/images/EgyptAir.png" />
+                </div>
+
+                <div class="SecAd">
+                    <div class="row margin-0-l-r ColorGreen">
+                        <div class="pull-left">website.com</div>
+                        <div class="pull-right"><span>Ad</span></div>
+                    </div>
+                    <h4>Ecperiance the nile - cafelluca</h4>
+                    <h5>Private 2 Hours Vruise in the Nile of the Pharaoh with dinner and drinks . morning</h5>
+                    <a href="#">Visit Site</a>
+                </div>
+                <div class="SecAd">
+                    <div class="row margin-0-l-r ColorGreen">
+                        <div class="pull-left">website.com</div>
+                        <div class="pull-right"><span>Ad</span></div>
+                    </div>
+                    <h4>Ecperiance the nile - cafelluca</h4>
+                    <h5>Private 2 Hours Vruise in the Nile of the Pharaoh with dinner and drinks . morning</h5>
+                    <a href="#">Visit Site</a>
+                </div>
+                <div class="SecAd">
+                    <div class="row margin-0-l-r ColorGreen">
+                        <div class="pull-left">website.com</div>
+                        <div class="pull-right"><span>Ad</span></div>
+                    </div>
+                    <h4>Ecperiance the nile - cafelluca</h4>
+                    <h5>Private 2 Hours Vruise in the Nile of the Pharaoh with dinner and drinks . morning</h5>
+                    <a href="#">Visit Site</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var y = 0;
+    var x;
+    $(document).on('click', '.UnSelectedSecOptionSelect .itemCheckBox input', function () {
+        debugger
+        $(this).parent().parent().parent().parent().parent(".SecOptionSelect");
+        $(this).parent().parent().parent().parent().parent(".SecOptionSelect").addClass("SecOptionSelectDone");
+        if (y == 0) {
+            $(".SelectedSecOptionSelect").append("<h5 class='TitleSelect'>You have selected the flight from Cairo to Kuwait</h5>");
+        }
+        y++;
+        x = $(this).parent().parent().parent().parent().parent(".SecOptionSelect");
+        $(".SelectedSecOptionSelect").append(x);
+        $(".UnSelectedSecOptionSelect .SecOptionSelect.SecOptionSelectDone").remove();
+
+        $(".SelectedSecOptionSelect .BookChoose").hide();
+        $(".SelectedSecOptionSelect .BookChooseGray").show();
+    });
+    $(document).on('click', '.SelectedSecOptionSelect .itemCheckBox input', function () {
+        debugger;
+        $(this).parent().parent().parent().parent().parent(".SecOptionSelect").removeClass("SecOptionSelectDone");
+        y--;
+        if (y == 0) {
+            $(".SelectedSecOptionSelect .TitleSelect").remove();
+        }
+        x = $(this).parent().parent().parent().parent().parent(".SecOptionSelect");
+        $(".UnSelectedSecOptionSelect").append(x);
+        $(this).parent().parent().parent().parent().parent(".SelectedSecOptionSelect .SecOptionSelect").remove();
+        $(".UnSelectedSecOptionSelect .BookChoose").show();
+        $(".UnSelectedSecOptionSelect .BookChoose.BookChooseGray").hide();
+    })
+
+</script>
+<script>
+
+    $(function () {
+        $("#slider-range").slider({
+            range: true,
+            min: 1,
+            max: 10000,
+            values: [1, 10000],
+            slide: function (event, ui) {
+                $("#amount").val("EGP" + ui.values[0] + " - EGP" + ui.values[1]);
+            }
+        });
+        $("#amount").val("EGP" + $("#slider-range").slider("values", 0) +
+            " - EGP" + $("#slider-range").slider("values", 1));
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $('.ResultAirPlane').owlCarousel({
+            loop: true,
+            margin: 0,
+            navText: ["<i class='fas fa-angle-right'></i>", "<i class='fas fa-angle-left'></i>"],
+            rtl: true,
+            responsive: {
+                200: {
+                    items: 1,
+                    nav: true
+                },
+                400: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: true
+                },
+                1000: {
+                    items: 4,
+                    nav: true,
+                }
+            }
+        })
+    });
+
+    $(document).ready(function () {
+        if ($(window).width() < 991) {
+            $(".HomeTabContainer").hide();
+            $(".Filtercntainer").hide();
+        }
+    });
+    $(document).on('click', '.OpenSearch', function () {
+        $(".HomeTabContainer").slideToggle();
+        $(".Filtercntainer").slideUp();
+
+
+    });
+    $(document).on('click', '.Filter', function () {
+        $(".HomeTabContainer").slideUp();
+        $(".Filtercntainer").slideToggle();
+
+    });
+    $(document).on('click', '.ShowDetails', function () {
+        $(this).parent().siblings(".detailsSecOptionSelectCntent").slideDown();
+        $(this).hide();
+        $(".ShowLess").show();
+    });
+    $(document).on('click', '.ShowLess', function () {
+        $(this).parent().siblings(".detailsSecOptionSelectCntent").slideUp();
+        $(this).hide();
+        $(".ShowDetails").show();
+    });
+</script>

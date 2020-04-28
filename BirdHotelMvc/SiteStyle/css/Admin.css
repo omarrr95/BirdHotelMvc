@@ -1,0 +1,282 @@
+﻿
+
+@font-face {
+    font-family: 'HelveticaNeueLight';
+    src: url('../fonts/HelveticaNeueLight.ttf') format('truetype');
+}
+a,
+ a:hover,
+a:focus {
+    text-decoration: none;
+}
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'HelveticaNeueLight';
+    min-height: 100%;
+    overflow: visible;
+    background-color: #f7f7f7;
+    text-align: start;
+}
+.searchbox {
+    position: relative;
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+.dropdown-menu > li > a {
+    text-align: start;
+}
+.searchbox input:focus {
+    outline: none; /*by default,input shows an outline on focus */
+}
+
+    .searchbox input {
+        z-index: 0;
+        margin-top: 15px;
+        width: 250px;
+        height: 40px;
+        background: #f1f3f4;
+        border-radius: 25px;
+        border: 2px solid #f1f3f4;
+    }
+    .searchbox i {
+        position: absolute;
+        top: 55%;
+        right: 5%;
+        color: #8e99a4;
+    }
+    .searchbox .close {
+        position: absolute;
+        top: 41%;
+        left: 11%;
+        color: #8e99a4;
+        border: none;
+        padding: 0;
+    }
+
+    .searchbox .search {
+        color: #8e99a4;
+        font-weight: 400;
+        padding-right: 32px;
+        font-size: 18px;
+        z-index: 3;
+    }
+
+    .searchbox  .fa-times {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+    }
+    .searchbox  form {
+        display: inline-block;
+    }
+
+    .searchbox  #closeid {
+        display: none;
+    }
+*:before, *:after {
+    -webkit-box-sizing: unset;
+    -moz-box-sizing: unset;
+    box-sizing: unset;
+}
+
+.StyleDropDown {
+    display: inline-block;
+}
+    .StyleDropDown button,
+    .StyleDropDown button:hover,
+    .StyleDropDown button:focus,
+    .StyleDropDown.open > .dropdown-toggle.btn-default:hover,
+    .StyleDropDown .btn-default:active:hover {
+        background-color: transparent;
+        border: none;
+        color: #1AAFED;
+        outline: none;
+        font-size: 18px;
+        font-weight: 600;
+    }
+        .StyleDropDown button i ,
+        .StyleDropDown button:hover i ,
+        .StyleDropDown button:focus i ,
+        .StyleDropDown.open > .dropdown-toggle.btn-default:hover i ,
+        .StyleDropDown .btn-default:active:hover i{
+            color: #333;
+        }
+.BodyContent {
+    max-height: auto;
+}
+
+.inlineblock {
+    display: inline-block;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.font9 {
+    font-size: 9px;
+}
+
+.padding-5-l-r {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.padding-top-btn-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.padding-top-btn-24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.margin-0-l-r {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.marginbtn20 {
+    margin-bottom: 20px;
+}
+
+.margrinbtn10 {
+    margin-bottom: 10px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.styled-select select {
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none;
+}
+.HeaderSec {
+    background-color: #fff;
+    padding: 20px 0;
+}
+.HeaderSec .Logo {
+    width: 100px;
+}
+.BarPages {
+    background-color: #1AAFED;
+}
+    .BarPages a,
+    .BarPages a:hover,
+    .BarPages a:focus{
+        padding: 20px 0;
+        color: #fff;
+        display: block;
+        text-decoration: none;
+    }
+        .BarPages a.active {
+            background-color: #158cbe;
+        }
+        .BarPages a i {
+            margin: 0 4px;
+        }
+.Cards {
+    margin: 30px auto 20px;
+}
+    .Cards .SecCard {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        padding: 10px 15px;
+    }
+    .Cards .SecCard h6 {
+        font-size: 11px;
+        color: #aaa;
+    }
+    .Cards .SecCard h4 .count-number {
+        font-weight: 600;
+        display: inline-block;
+    }
+    .Cards .SecCard a,
+    .Cards .SecCard a:hover,
+    .Cards .SecCard a:focus {
+        color: #1AAFED;
+        display: block;
+        text-decoration: none;
+    }
+    .Cards .SecCard h4 .mins {
+        margin: 0 15px;
+        color: red;
+        font-size: 14px;
+    }
+    .Cards .SecCard h4 .Plus {
+        margin: 0 15px;
+        color: green;
+        font-size: 14px;
+    }
+.SecTable {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 20px 25px;
+    min-height: 200px;
+    margin-bottom: 20px;
+}
+        .SecTable .SecHeader {
+            padding-bottom: 10px;
+            border-bottom : 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+            .SecTable .SecHeader .btnSecTable {
+                padding: 5px 15px;
+                color: #333;
+                border: 1px solid #777;
+                margin: 0 7px;
+                display: inline-block;
+            }
+            .SecTable .SecHeader .btnSecTable i{
+                margin: 0 3px;
+            }
+                .SecTable .SecHeader .btnSecTable.BTNew {
+                    color: #fff;
+                    border: 1px solid #1AAFED;
+                    background-color: #1AAFED;
+                }
+.DataTB {
+    width: 100%;
+    margin-top: 10px !important;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
+    .DataTB  tr.odd {
+        background-color: #f1f1f1;
+    }
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #1AAFED;
+    border-color: #1AAFED;
+}
+.DataTB tr td a {
+    color: #1AAFED;
+    font-weight: 600
+}
+.AdDes {
+    cursor: pointer;
+}
+@media (max-width: 992px) {
+    .dataTables_wrapper {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+}

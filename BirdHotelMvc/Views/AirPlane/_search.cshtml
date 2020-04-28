@@ -1,0 +1,669 @@
+﻿<div class="HomeTabContainer">
+    <div class="container">
+
+
+        <ul class="nav  nav-pills nav-fill HomeTab" id="myTab" role="tablist">
+            <li class="nav-item active">
+                <a class="nav-link nav-item" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Two Way</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-item" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">One Way</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-item" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Round Way</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade active in" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <form class="RoundWay">
+                    <div class="row margin-0-l-r Sec">
+                        <div class="details">
+                            <div class="secDetials">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="inlineblock">
+                                    <label>Egy</label>
+                                    <p><input class="" placeholder="مطار المغادرة" /></p>
+                                </div>
+                            </div>
+                            <img class="NoMobile" src="~/SiteStyle/images/Icon.png" />
+                            <img class="MobileOnly" src="~/SiteStyle/images/IconMobile.png" />
+                            <div class="secDetials">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="inlineblock">
+                                    <label>KWI</label>
+                                    <p><input class="" placeholder="مطار الوصول" /></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="depart">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                <input id="" type="date" class="form-control" name="msg" placeholder="depart">
+                            </div>
+                        </div>
+                        <div class="return">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                <input id="" type="date" class="form-control" name="msg" placeholder="return">
+                            </div>
+                        </div>
+                        <div class="Passanger dropdown">
+
+                            <i class="far fa-user"></i>
+                            <div class="Information" data-toggle="dropdown">
+                                <p><input class="PersonCount" value="1" type="number" /> Passenger</p>
+                            </div>
+                            <div class="Personal ViewCount dropdown-menu">
+                                <div class="row margin-0-l-r margrinbtn10">
+                                    <label>Cabin Class</label>
+                                    <select class="form-control select2">
+                                        <option>Economy</option>
+                                        <option>Premium Economy</option>
+                                        <option>Business</option>
+                                        <option>First</option>
+                                    </select>
+                                </div>
+                                <div class="row margin-0-l-r margrinbtn10">
+                                    <label>Preferred Airline</label>
+                                    <select class="form-control select2">
+                                        <option>all</option>
+                                        <option>Premium Economy</option>
+                                        <option>Business</option>
+                                        <option>First</option>
+                                    </select>
+                                </div>
+                                <div class="row margin-0-l-r margrinbtn10">
+                                    <div class="col-xs-6">بالغين</div>
+                                    <div class="col-xs-6">
+                                        <div class="Quantity AdultQuant">
+                                            <button class="min" type="button">-</button>
+                                            <p class="PersonCount">1</p>
+                                            <button class="max" type="button">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row margin-0-l-r margrinbtn10">
+                                    <div class="col-xs-6">اطفال فوق 12 سنه</div>
+                                    <div class="col-xs-6">
+                                        <div class="Quantity ChildrenQuant">
+                                            <button class="min" type="button">-</button>
+                                            <p class="PersonCount">0</p>
+                                            <button class="max" type="button">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row margin-0-l-r margrinbtn10">
+                                    <div class="col-xs-6">اطفال تحت 12 سنه</div>
+                                    <div class="col-xs-6">
+                                        <div class="Quantity KidsQuant">
+                                            <button class="min" type="button">-</button>
+                                            <p class="PersonCount">0</p>
+                                            <button class="max" type="button">+</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Search">
+                            <button class="btn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-pane fade " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <form class="OneWay">
+                    <div class="row margin-0-l-r Sec">
+                        <div class="details">
+                            <div class="secDetials">
+                                <label>Egy</label>
+                                <p><input class="" placeholder="مطار المغادرة" /></p>
+                            </div>
+                            <img class="NoMobile" src="~/SiteStyle/images/Icon.png" />
+                            <img class="MobileOnly" src="~/SiteStyle/images/IconMobile.png" />
+                            <div class="secDetials">
+                                <label>KWI</label>
+                                <p><input class="" placeholder="مطار الوصول" /></p>
+                            </div>
+                        </div>
+                        <div class="depart">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                <input id="" type="date" class="form-control" name="msg" placeholder="depart">
+                            </div>
+                        </div>
+                        <div class="return DisableSec">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                <input id="" type="date" disabled class="form-control" name="msg" placeholder="return">
+                            </div>
+                        </div>
+                        <div class="Passanger dropdown">
+
+                            <i class="far fa-user"></i>
+                            <div class="Information" data-toggle="dropdown">
+                                <p><input class="PersonCount" value="1" type="number" /> Passenger</p>
+                            </div>
+                            <div class="Personal ViewCount dropdown-menu">
+                                <div class="row margin-0-l-r margrinbtn10">
+                                    <label>Cabin Class</label>
+                                    <select class="form-control select2">
+                                        <option>Economy</option>
+                                        <option>Premium Economy</option>
+                                        <option>Business</option>
+                                        <option>First</option>
+                                    </select>
+                                </div>
+                                <div class="row margin-0-l-r margrinbtn10">
+                                    <label>Preferred Airline</label>
+                                    <select class="form-control select2">
+                                        <option>all</option>
+                                        <option>Premium Economy</option>
+                                        <option>Business</option>
+                                        <option>First</option>
+                                    </select>
+                                </div>
+                                <div class="row margin-0-l-r margrinbtn10">
+                                    <div class="col-xs-6">بالغين</div>
+                                    <div class="col-xs-6">
+                                        <div class="Quantity AdultQuant">
+                                            <button class="min" type="button">-</button>
+                                            <p class="PersonCount">1</p>
+                                            <button class="max" type="button">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row margin-0-l-r margrinbtn10">
+                                    <div class="col-xs-6">اطفال فوق 12 سنه</div>
+                                    <div class="col-xs-6">
+                                        <div class="Quantity ChildrenQuant">
+                                            <button class="min" type="button">-</button>
+                                            <p class="PersonCount">0</p>
+                                            <button class="max" type="button">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row margin-0-l-r margrinbtn10">
+                                    <div class="col-xs-6">اطفال تحت 12 سنه</div>
+                                    <div class="col-xs-6">
+                                        <div class="Quantity KidsQuant">
+                                            <button class="min" type="button">-</button>
+                                            <p class="PersonCount">0</p>
+                                            <button class="max" type="button">+</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Search">
+                            <button class="btn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <form class="MultiCity">
+                    <div class="row margin-0-l-r Sec">
+                        <div class="details">
+                            <div class="secDetials">
+                                <label>Egy</label>
+                                <p><input class="" placeholder="مطار المغادرة" /></p>
+                            </div>
+                            <img class="NoMobile" src="~/SiteStyle/images/Icon.png" />
+                            <img class="MobileOnly" src="~/SiteStyle/images/IconMobile.png" />
+                            <div class="secDetials">
+                                <label>KWI</label>
+                                <p><input class="" placeholder="مطار الوصول" /></p>
+                            </div>
+                        </div>
+                        <div class="depart">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                <input id="" type="date" class="form-control" name="msg" placeholder="depart">
+                            </div>
+                        </div>
+                        <div class="return">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                <input id="" type="date" class="form-control" name="msg" placeholder="return">
+                            </div>
+                        </div>
+                        <div class="Passanger dropdown">
+
+                            <i class="far fa-user"></i>
+                            <div class="Information" data-toggle="dropdown">
+                                <p><input class="PersonCount" value="1" type="number" /> Passenger</p>
+                            </div>
+                            <div class="Personal ViewCount dropdown-menu">
+                                <div class="row margin-0-l-r margrinbtn10">
+                                    <label>Cabin Class</label>
+                                    <select class="form-control select2">
+                                        <option>Economy</option>
+                                        <option>Premium Economy</option>
+                                        <option>Business</option>
+                                        <option>First</option>
+                                    </select>
+                                </div>
+                                <div class="row margin-0-l-r margrinbtn10">
+                                    <label>Preferred Airline</label>
+                                    <select class="form-control select2">
+                                        <option>all</option>
+                                        <option>Premium Economy</option>
+                                        <option>Business</option>
+                                        <option>First</option>
+                                    </select>
+                                </div>
+                                <div class="row margin-0-l-r margrinbtn10">
+                                    <div class="col-xs-6">بالغين</div>
+                                    <div class="col-xs-6">
+                                        <div class="Quantity AdultQuant">
+                                            <button class="min" type="button">-</button>
+                                            <p class="PersonCount">1</p>
+                                            <button class="max" type="button">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row margin-0-l-r margrinbtn10">
+                                    <div class="col-xs-6">اطفال فوق 12 سنه</div>
+                                    <div class="col-xs-6">
+                                        <div class="Quantity ChildrenQuant">
+                                            <button class="min" type="button">-</button>
+                                            <p class="PersonCount">0</p>
+                                            <button class="max" type="button">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row margin-0-l-r margrinbtn10">
+                                    <div class="col-xs-6">اطفال تحت 12 سنه</div>
+                                    <div class="col-xs-6">
+                                        <div class="Quantity KidsQuant">
+                                            <button class="min" type="button">-</button>
+                                            <p class="PersonCount">0</p>
+                                            <button class="max" type="button">+</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Search">
+                            <button class="btn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="row margin-0-l-r Sec MultiCitySec">
+
+
+
+                        <div class="AddPlain">
+                            <div class="Information">
+                                <a><i class="fas fa-plus"></i> Add Fly</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    $(".RoundWay .AdultQuant .min").click(function () {
+        debugger;
+        var AdultQuant = $(".RoundWay .AdultQuant p").html();
+        AdultQuant = parseInt(AdultQuant);
+        if (AdultQuant <= 1) {
+            return;
+        }
+        else {
+            AdultQuant--;
+
+        }
+
+        $(".RoundWay .AdultQuant p").html(AdultQuant);
+        var kids = $(".RoundWay .KidsQuant p").html();
+        var child = $(".RoundWay .ChildrenQuant p").html();
+        kids = parseInt(kids);
+        child = parseInt(child);
+        $(".RoundWay input.PersonCount").val(AdultQuant + kids + child);
+
+    })
+    $(".RoundWay .AdultQuant .max").click(function () {
+        var AdultQuant = $(".RoundWay .AdultQuant p").html();
+        AdultQuant = parseInt(AdultQuant);
+        AdultQuant++;
+        $(".RoundWay .AdultQuant p").html(AdultQuant);
+        var kids = $(".RoundWay .KidsQuant p").html();
+        var child = $(".RoundWay .ChildrenQuant p").html();
+        kids = parseInt(kids);
+        child = parseInt(child);
+        $(".RoundWay input.PersonCount").val(AdultQuant + kids + child);
+
+    })
+
+    $(".RoundWay .KidsQuant .min").click(function () {
+        debugger;
+        var KidsQuant = $(".RoundWay .KidsQuant p").html();
+        KidsQuant = parseInt(KidsQuant);
+        if (KidsQuant <= 0) {
+            return;
+        }
+        else {
+            KidsQuant--;
+
+        }
+        $(".RoundWay .KidsQuant p").html(KidsQuant);
+        var Adult = $(".RoundWay .AdultQuant p").html();
+        var child = $(".RoundWay .ChildrenQuant p").html();
+        Adult = parseInt(Adult);
+        child = parseInt(child);
+        $(".RoundWay input.PersonCount").val(Adult + KidsQuant + child);
+
+    })
+    $(".RoundWay .KidsQuant .max").click(function () {
+        debugger
+        var KidsQuant = $(".RoundWay .KidsQuant p").html();
+        KidsQuant = parseInt(KidsQuant);
+        KidsQuant++;
+        $(".RoundWay .KidsQuant p").html(KidsQuant);
+        var Adult = $(".RoundWay .AdultQuant p").html();
+        var child = $(".RoundWay .ChildrenQuant p").html();
+        Adult = parseInt(Adult);
+        child = parseInt(child);
+        $(".RoundWay input.PersonCount").val(Adult + KidsQuant + child);
+    })
+
+    $(".RoundWay .ChildrenQuant .min").click(function () {
+        debugger;
+        var ChildrenQuant = $(".RoundWay .ChildrenQuant p").html();
+        ChildrenQuant = parseInt(ChildrenQuant);
+        if (ChildrenQuant <= 0) {
+            return;
+        }
+        else {
+            ChildrenQuant--;
+
+        }
+        $(".RoundWay .ChildrenQuant p").html(ChildrenQuant);
+        var Adult = $(".RoundWay .AdultQuant p").html();
+        var kids = $(".RoundWay .KidsQuant p").html();
+        Adult = parseInt(Adult);
+        kids = parseInt(kids);
+        $(".RoundWay input.PersonCount").val(Adult + kids + ChildrenQuant);
+
+    })
+    $(".RoundWay .ChildrenQuant .max").click(function () {
+        var ChildrenQuant = $(".RoundWay .ChildrenQuant p").html();
+        ChildrenQuant = parseInt(ChildrenQuant);
+        ChildrenQuant++;
+        $(".RoundWay .ChildrenQuant p").html(ChildrenQuant);
+        var Adult = $(".RoundWay .AdultQuant p").html();
+        var kids = $(".RoundWay .KidsQuant p").html();
+        Adult = parseInt(Adult);
+        kids = parseInt(kids);
+        $(".RoundWay input.PersonCount").val(Adult + kids + ChildrenQuant);
+
+    })
+
+</script>
+<script>
+
+    $(".OneWay .AdultQuant .min").click(function () {
+        debugger;
+        var AdultQuant = $(".OneWay .AdultQuant p").html();
+        AdultQuant = parseInt(AdultQuant);
+        if (AdultQuant <= 1) {
+            return;
+        }
+        else {
+            AdultQuant--;
+
+        }
+
+        $(".OneWay .AdultQuant p").html(AdultQuant);
+        var kids = $(".OneWay .KidsQuant p").html();
+        var child = $(".OneWay .ChildrenQuant p").html();
+        kids = parseInt(kids);
+        child = parseInt(child);
+        $(".OneWay input.PersonCount").val(AdultQuant + kids + child);
+
+    })
+    $(".OneWay .AdultQuant .max").click(function () {
+        var AdultQuant = $(".OneWay .AdultQuant p").html();
+        AdultQuant = parseInt(AdultQuant);
+        AdultQuant++;
+        $(".OneWay .AdultQuant p").html(AdultQuant);
+        var kids = $(".OneWay .KidsQuant p").html();
+        var child = $(".OneWay .ChildrenQuant p").html();
+        kids = parseInt(kids);
+        child = parseInt(child);
+        $(".OneWay input.PersonCount").val(AdultQuant + kids + child);
+
+    })
+
+    $(".OneWay .KidsQuant .min").click(function () {
+        debugger;
+        var KidsQuant = $(".OneWay .KidsQuant p").html();
+        KidsQuant = parseInt(KidsQuant);
+        if (KidsQuant <= 0) {
+            return;
+        }
+        else {
+            KidsQuant--;
+
+        }
+        $(".OneWay .KidsQuant p").html(KidsQuant);
+        var Adult = $(".OneWay .AdultQuant p").html();
+        var child = $(".OneWay .ChildrenQuant p").html();
+        Adult = parseInt(Adult);
+        child = parseInt(child);
+        $(".OneWay input.PersonCount").val(Adult + KidsQuant + child);
+
+    })
+    $(".OneWay .KidsQuant .max").click(function () {
+        debugger
+        var KidsQuant = $(".OneWay .KidsQuant p").html();
+        KidsQuant = parseInt(KidsQuant);
+        KidsQuant++;
+        $(".OneWay .KidsQuant p").html(KidsQuant);
+        var Adult = $(".OneWay .AdultQuant p").html();
+        var child = $(".OneWay .ChildrenQuant p").html();
+        Adult = parseInt(Adult);
+        child = parseInt(child);
+        $(".OneWay input.PersonCount").val(Adult + KidsQuant + child);
+    })
+
+    $(".OneWay .ChildrenQuant .min").click(function () {
+        debugger;
+        var ChildrenQuant = $(".OneWay .ChildrenQuant p").html();
+        ChildrenQuant = parseInt(ChildrenQuant);
+        if (ChildrenQuant <= 0) {
+            return;
+        }
+        else {
+            ChildrenQuant--;
+
+        }
+        $(".OneWay .ChildrenQuant p").html(ChildrenQuant);
+        var Adult = $(".OneWay .AdultQuant p").html();
+        var kids = $(".OneWay .KidsQuant p").html();
+        Adult = parseInt(Adult);
+        kids = parseInt(kids);
+        $(".OneWay input.PersonCount").val(Adult + kids + ChildrenQuant);
+
+    })
+    $(".OneWay .ChildrenQuant .max").click(function () {
+        var ChildrenQuant = $(".OneWay .ChildrenQuant p").html();
+        ChildrenQuant = parseInt(ChildrenQuant);
+        ChildrenQuant++;
+        $(".OneWay .ChildrenQuant p").html(ChildrenQuant);
+        var Adult = $(".OneWay .AdultQuant p").html();
+        var kids = $(".OneWay .KidsQuant p").html();
+        Adult = parseInt(Adult);
+        kids = parseInt(kids);
+        $(".OneWay input.PersonCount").val(Adult + kids + ChildrenQuant);
+
+    })
+
+</script>
+<script>
+
+    $(".MultiCity .AdultQuant .min").click(function () {
+        debugger;
+        var AdultQuant = $(".MultiCity .AdultQuant p").html();
+        AdultQuant = parseInt(AdultQuant);
+        if (AdultQuant <= 1) {
+            return;
+        }
+        else {
+            AdultQuant--;
+
+        }
+
+        $(".MultiCity .AdultQuant p").html(AdultQuant);
+        var kids = $(".MultiCity .KidsQuant p").html();
+        var child = $(".MultiCity .ChildrenQuant p").html();
+        kids = parseInt(kids);
+        child = parseInt(child);
+        $(".MultiCity input.PersonCount").val(AdultQuant + kids + child);
+
+    })
+    $(".MultiCity .AdultQuant .max").click(function () {
+        var AdultQuant = $(".MultiCity .AdultQuant p").html();
+        AdultQuant = parseInt(AdultQuant);
+        AdultQuant++;
+        $(".MultiCity .AdultQuant p").html(AdultQuant);
+        var kids = $(".MultiCity .KidsQuant p").html();
+        var child = $(".MultiCity .ChildrenQuant p").html();
+        kids = parseInt(kids);
+        child = parseInt(child);
+        $(".MultiCity input.PersonCount").val(AdultQuant + kids + child);
+
+    })
+
+    $(".MultiCity .KidsQuant .min").click(function () {
+        debugger;
+        var KidsQuant = $(".MultiCity .KidsQuant p").html();
+        KidsQuant = parseInt(KidsQuant);
+        if (KidsQuant <= 0) {
+            return;
+        }
+        else {
+            KidsQuant--;
+
+        }
+        $(".MultiCity .KidsQuant p").html(KidsQuant);
+        var Adult = $(".MultiCity .AdultQuant p").html();
+        var child = $(".MultiCity .ChildrenQuant p").html();
+        Adult = parseInt(Adult);
+        child = parseInt(child);
+        $(".MultiCity input.PersonCount").val(Adult + KidsQuant + child);
+
+    })
+    $(".MultiCity .KidsQuant .max").click(function () {
+        debugger
+        var KidsQuant = $(".MultiCity .KidsQuant p").html();
+        KidsQuant = parseInt(KidsQuant);
+        KidsQuant++;
+        $(".MultiCity .KidsQuant p").html(KidsQuant);
+        var Adult = $(".MultiCity .AdultQuant p").html();
+        var child = $(".MultiCity .ChildrenQuant p").html();
+        Adult = parseInt(Adult);
+        child = parseInt(child);
+        $(".MultiCity input.PersonCount").val(Adult + KidsQuant + child);
+    })
+
+    $(".MultiCity .ChildrenQuant .min").click(function () {
+        debugger;
+        var ChildrenQuant = $(".MultiCity .ChildrenQuant p").html();
+        ChildrenQuant = parseInt(ChildrenQuant);
+        if (ChildrenQuant <= 0) {
+            return;
+        }
+        else {
+            ChildrenQuant--;
+
+        }
+        $(".MultiCity .ChildrenQuant p").html(ChildrenQuant);
+        var Adult = $(".MultiCity .AdultQuant p").html();
+        var kids = $(".MultiCity .KidsQuant p").html();
+        Adult = parseInt(Adult);
+        kids = parseInt(kids);
+        $(".MultiCity input.PersonCount").val(Adult + kids + ChildrenQuant);
+
+    })
+    $(".MultiCity .ChildrenQuant .max").click(function () {
+        var ChildrenQuant = $(".MultiCity .ChildrenQuant p").html();
+        ChildrenQuant = parseInt(ChildrenQuant);
+        ChildrenQuant++;
+        $(".MultiCity .ChildrenQuant p").html(ChildrenQuant);
+        var Adult = $(".MultiCity .AdultQuant p").html();
+        var kids = $(".MultiCity .KidsQuant p").html();
+        Adult = parseInt(Adult);
+        kids = parseInt(kids);
+        $(".MultiCity input.PersonCount").val(Adult + kids + ChildrenQuant);
+
+    })
+    var AddPlain = 0;
+    $(document).on('click', '.MultiCity .AddPlain', function () {
+        AddPlain++;
+        if (AddPlain % 2 == 0) {
+            $(".MultiCitySec .AddPlain").before(`<div class="details">
+                            <div class="secDetials">
+                     <i class="fas fa-map-marker-alt"></i>
+                                <div class="inlineblock">
+                                <label>Egy</label>
+                                   <p><input class="" placeholder="مطار المغادرة" /></p>
+
+                            </div>
+                            </div>
+                            <img  class="NoMobile" src="../SiteStyle/images/Icon.png" />
+                            <img class="MobileOnly" src="../SiteStyle/images/IconMobile.png" />
+                            <div class="secDetials">
+                     <i class="fas fa-map-marker-alt"></i>
+                                <div class="inlineblock">
+                                <label>KWI</label>
+                         <p><input class="" placeholder="مطار الوصول" /></p>
+
+                            </div>
+                            </div>
+                        </div>`);
+            $(".AddPlain").remove();
+            $(".MultiCity").append(`<div class="row margin-0-l-r Sec MultiCitySec">
+                        <div class="AddPlain">
+                            <div class="Information">
+                                <a><i class="fas fa-plus"></i> Add Fly</a>
+                            </div>
+                        </div>
+                    </div>`);
+        }
+
+        else {
+            $(".MultiCitySec .AddPlain").before(`<div class="details">
+                            <div class="secDetials">
+                     <i class="fas fa-map-marker-alt"></i>
+                                <div class="inlineblock">
+                                <label>Egy</label>
+                                   <p><input class="" placeholder="مطار المغادرة" /></p>
+
+                            </div>
+                            </div>
+                           <img  class="NoMobile" src="../SiteStyle/images/Icon.png" />
+                            <img class="MobileOnly" src="../SiteStyle/images/IconMobile.png" />
+                            <div class="secDetials">
+                     <i class="fas fa-map-marker-alt"></i>
+                                <div class="inlineblock">
+                                <label>KWI</label>
+                         <p><input class="" placeholder="مطار الوصول" /></p>
+
+                            </div>
+                            </div>
+                        </div>`);
+        }
+
+
+    })
+</script>

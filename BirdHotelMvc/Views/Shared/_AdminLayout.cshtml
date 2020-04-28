@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    <link href="~/SiteStyle/css/all.min.css" rel="stylesheet" />
+    <link href="~/SiteStyle/plugin/datatable/dataTables.bootstrap.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/fixedheader/3.1.6/css/fixedHeader.dataTables.min.css" rel="stylesheet" />
+
+
+    <link href="~/SiteStyle/css/Language/Arabic/Arabic.css" rel="stylesheet" />
+    <link href="~/SiteStyle/css/Admin.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="BodyContent">
+        <div class="row margin-0-l-r HeaderSec">
+            <div class="container">
+                <div class="pull-left">
+                    @*<div class="StyleDropDown dropdown">
+                            <button class="dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-chevron-down font9"></i>
+                                mohamed
+                                <i class="far fa-user"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">بروفايلي</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>*@
+                    <div class="dropdown StyleDropDown">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                            <i class="fas fa-chevron-down font9"></i>
+                            mohamed
+                            <i class="far fa-user"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">بروفايلي</a></li>
+                            <li><a href="#">تسجيل الخروج</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="searchbox animated zoomIn">
+                        <form method="get">
+                            <input oninput="triggercross(this.value)" type="text" placeholder="search" id="search" name="search"
+                                   class="search"><i class="fas fa-search"></i>
+                            <button onclick="close1()" id="closeid" type="reset" class="close">
+                                <i class="fas fa-times"></i>
+                                <p id="demo"></p>
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="pull-right">
+                    <img class="Logo" src="~/SiteStyle/images/Logo-1.png" />
+                </div>
+            </div>
+
+        </div>
+        <div class="BarPages">
+            <div class="container">
+                <div class="row margin-0-l-r text-center">
+                    <div class="col-md-2 col-xs-6 padding-5-l-r">
+                        <a class="" href="@Url.Action("Setting", "Admin")"><i class="fas fa-cog"></i> Setting</a>
+                    </div>
+                    <div class="col-md-2 col-xs-6 padding-5-l-r">
+                        <a class="" href="@Url.Action("Payment", "Admin")"><i class="far fa-credit-card"></i> Payment</a>
+                    </div>
+                    <div class="col-md-2 col-xs-6 padding-5-l-r">
+                        <a class="" href="@Url.Action("Users", "Admin")"><i class="far fa-user"></i> User</a>
+                    </div>
+                    <div class="col-md-2 col-xs-6 padding-5-l-r">
+                        <a class="" href="@Url.Action("Agent", "Admin")"><i class="far fa-user"></i> Agent</a>
+                    </div>
+                    <div class="col-md-2 col-xs-6 padding-5-l-r">
+                        <a class="" href="@Url.Action("Compaires", "Admin")"><i class="fas fa-shopping-bag"></i> Compaires</a>
+                    </div>
+                    <div class="col-md-2 col-xs-6 padding-5-l-r">
+                        <a class="" href="@Url.Action("Reservation", "Admin")"><i class="far fa-file-alt"></i> Reservation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @RenderBody()
+    </div>
+    <script src="~/SiteStyle/plugin/datatable/dataTables.min.js"></script>
+    <script src="~/SiteStyle/plugin/datatable/dataTables.bootstrap.js"></script>
+    <script>
+
+        function triggercross(val) {
+            var val = document.getElementById("search");
+            var x = document.getElementById("closeid");
+            x.style.display = "block";
+        }
+
+        function close1() {
+
+            // document.getElementById("demo").innerHTML = "You wrote: " + val;
+            var x = document.getElementById("closeid");
+            if (x.style.display == "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+
+        $(document).ready(function () {
+            $(".BodyContent").height($(window).height() - 40);
+        });
+    </script>
+    <script>
+        (function ($) {
+            $.fn.countTo = function (options) {
+                options = options || {};
+
+                return $(this).each(function () {
+                    // set options for current element
+                    var settings = $.extend({}, $.fn.countTo.defaults, {
+                        from: $(this).data('from'),
+                        to: $(this).data('to'),
+                        speed: $(this).data('speed'),
+                        refreshInterval: $(this).data('refresh-interval'),
+                        decimals: $(this).data('decimals')
+                    }, options);
+
+                    // how many times to update the value, and how much to increment the value on each update
+                    var loops = Math.ceil(settings.speed / settings.refreshInterval),
+                        increment = (settings.to - settings.from) / loops;
+
+                    // references & variables that will change with each update
+                    var self = this,
+                        $self = $(this),
+                        loopCount = 0,
+                        value = settings.from,
+                        data = $self.data('countTo') || {};
+
+                    $self.data('countTo', data);
+
+                    // if an existing interval can be found, clear it first
+                    if (data.interval) {
+                        clearInterval(data.interval);
+                    }
+                    data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+                    // initialize the element with the starting value
+                    render(value);
+
+                    function updateTimer() {
+                        value += increment;
+                        loopCount++;
+
+                        render(value);
+
+                        if (typeof (settings.onUpdate) == 'function') {
+                            settings.onUpdate.call(self, value);
+                        }
+
+                        if (loopCount >= loops) {
+                            // remove the interval
+                            $self.removeData('countTo');
+                            clearInterval(data.interval);
+                            value = settings.to;
+
+                            if (typeof (settings.onComplete) == 'function') {
+                                settings.onComplete.call(self, value);
+                            }
+                        }
+                    }
+
+                    function render(value) {
+                        var formattedValue = settings.formatter.call(self, value, settings);
+                        $self.html(formattedValue);
+                    }
+                });
+            };
+
+            $.fn.countTo.defaults = {
+                from: 0,               // the number the element should start at
+                to: 0,                 // the number the element should end at
+                speed: 1000,           // how long it should take to count between the target numbers
+                refreshInterval: 100,  // how often the element should be updated
+                decimals: 0,           // the number of decimal places to show
+                formatter: formatter,  // handler for formatting the value before rendering
+                onUpdate: null,        // callback method for every time the element is updated
+                onComplete: null       // callback method for when the element finishes updating
+            };
+
+            function formatter(value, settings) {
+                return value.toFixed(settings.decimals);
+            }
+        }(jQuery));
+
+        jQuery(function ($) {
+            // custom formatting example
+            $('.count-number').data('countToOptions', {
+                formatter: function (value, options) {
+                    return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+                }
+            });
+
+            // start all the timers
+            $('.timer').each(count);
+
+            function count(options) {
+                var $this = $(this);
+                options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+                $this.countTo(options);
+            }
+        });
+
+        $(document).ready(function () {
+            $('.DataTB').DataTable({
+                "searching": true,
+                "pageLength": 10,
+                "bLengthMenu": true,
+                "bLengthChange": true,
+                "bInfo": true,
+                fixedHeader: {
+                    header: true
+                }
+
+
+            });
+        });
+
+        $(document).ready(function () {
+            $('.BarPages a').removeClass('active');
+            $('.BarPages a[href="' + window.location.pathname + '"]').addClass('active');
+        });
+    </script>
+    @Scripts.Render("~/bundles/bootstrap")
+
+</body>
+</html>

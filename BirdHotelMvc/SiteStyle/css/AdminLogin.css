@@ -1,0 +1,146 @@
+﻿
+@font-face {
+    font-family: 'HelveticaNeueLight';
+    src: url('../fonts/HelveticaNeueLight.ttf') format('truetype');
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'HelveticaNeueLight';
+    min-height: 100%;
+    overflow: visible;
+}
+
+*:before, *:after {
+    -webkit-box-sizing: unset;
+    -moz-box-sizing: unset;
+    box-sizing: unset;
+}
+
+.LoginForm {
+    height: calc(100% - 40px);
+}
+
+    .LoginForm .imgSec {
+        display: inline-block;
+        position: relative;
+        height: 100%;
+        width: 70%;
+        float: right;
+    }
+
+        .LoginForm .imgSec img {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        .LoginForm .imgSec .overLayBlueLogin {
+            position: absolute;
+            z-index: 3;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: #1AAFED;
+            opacity: 0.2;
+        }
+
+    .LoginForm .FormSec {
+        background-color: #fff;
+        width: 30%;
+        display: inline-block;
+    }
+
+        .LoginForm .FormSec .TopMask {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .LoginForm .FormSec form .SecInput {
+            margin-bottom: 25px;
+            background-color: #f5f5f5;
+            border-radius: 25px;
+            color: #999;
+            padding: 11px 20px;
+        }
+
+        .LoginForm .FormSec form {
+            padding: 0px 50px;
+        }
+
+        .LoginForm .FormSec img {
+            margin: auto;
+            margin-bottom: 20px;
+            max-width: 90%;
+        }
+
+        .LoginForm .FormSec form .SecInput i {
+            width: 25px;
+            margin: 0 5px;
+        }
+
+        .LoginForm .FormSec form .SecInput input {
+            display: inline-block;
+            width: calc(100% - 40px);
+            background-color: transparent;
+            border: none;
+            box-shadow: none;
+            outline: none;
+        }
+
+        .LoginForm .FormSec form .LoginBtn,
+        .LoginForm .FormSec form .LoginBtn:hover,
+        .LoginForm .FormSec form .LoginBtn:focus {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background-color: #1AAFED;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 25px;
+        }
+
+.Footer {
+    margin: 0;
+    padding: 10px;
+    background-color: #1AAFED;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    height: 40px;
+    letter-spacing: 1px;
+}
+
+    .Footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+@media (max-width: 992px) {
+    .LoginForm .imgSec {
+        display: none;
+    }
+
+    .LoginForm .FormSec .TopMask {
+        opacity: 0;
+        margin-bottom: 0;
+        height: 100px;
+    }
+
+    .LoginForm .FormSec {
+        width: 100%;
+        display: block;
+        background-color: rgba(26, 175, 237, 0.35);
+    }
+
+        .LoginForm .FormSec form {
+            padding: 0px 30px;
+        }
+}

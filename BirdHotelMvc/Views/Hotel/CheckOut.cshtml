@@ -1,0 +1,539 @@
+﻿
+l@{
+    ViewBag.Title = "CheckOut";
+}
+<style>
+    .form-group {
+        margin-bottom: 25px;
+    }
+    .form-control,
+    .select2-container--default .select2-selection--single{
+        border-color: #1AAFED;
+    }
+    @@media (max-width: 992px) {
+
+        .SecCheckOut {
+            margin-bottom: 0px;
+        }
+    }
+</style>
+<div class="row margin-0-l-r Steps MobileOnly">
+    <div class="col-xs-4 text-center StepsItem Steps1">Review Flight</div>
+    <div class="col-xs-4 text-center StepsItem Steps2">Traveller Details</div>
+    <div class="col-xs-4 text-center StepsItem Steps3">Payment</div>
+</div>
+<div class="row margin-0-l-r">
+    <div class="container">
+        <div class="row margin-0-l-r">
+            <div class="ContentSecAir">
+                <div class="col-md-3 pull-right-not-responsive Step1">
+
+                    <div class="row margin-0-l-r bold NoMobile">
+                        <div class="pull-right">Review Your Itinerary</div>
+                    </div>
+                    <div class="Sec ImgCompany NoMobile">
+                        <img src="/SiteStyle/images/Hilton.png">
+                    </div>
+                    <div class="Sec Summary">
+                        <div class="HeaderCheckOut">
+                            Summary
+                        </div>
+                        <div class="ImgSec">
+                            <img src="/SiteStyle/images/000.png">
+                        </div>
+                        <div class="row margin-0-l-r HeaderHotel">
+                            <h4>AURORA ORIENTAL RESORT</h4>
+                            <div class="pull-left">
+                                <h6><i class="fas fa-map-marker-alt"></i>Cairo , Egypt</h6>
+                            </div>
+                            <div class="pull-right">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="row margin-0-l-r">
+                            <button class="row margin-0-l-r ButtonCollapsed" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+                                <div class="pull-left">Booking Detail</div>
+                                <div class="pull-right"><i class="fas fa-chevron-up"></i></div>
+                            </button>
+
+                            <div class="contentCollapse collapse in" id="collapseExample" aria-expanded="true" style="">
+
+                                <div class="row margin-0-l-r">
+                                    <div class="pull-left">25 March - 30 March</div>
+                                    <div class="pull-right"><a href="#">Edit</a></div>
+                                </div>
+                                <div class="row margin-0-l-r">
+                                    <div class="pull-left">Nights</div>
+                                    <div class="pull-right">7 nights</div>
+                                </div>
+                                <div class="row margin-0-l-r">
+                                    <div class="pull-left">Room</div>
+                                    <div class="pull-right">2 Room</div>
+                                </div>
+                                <div class="row margin-0-l-r">
+                                    <div class="pull-left">Adults</div>
+                                    <div class="pull-right">Adult</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin-0-l-r">
+                            <button class="row margin-0-l-r ButtonCollapsed" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="true" aria-controls="collapseExample">
+                                <div class="pull-left">Promo code</div>
+                                <div class="pull-right"><i class="fas fa-chevron-up"></i></div>
+                            </button>
+
+                            <div class="contentCollapse collapse in" id="collapseExample3" aria-expanded="true" style="">
+                                <div class="row margin-0-l-r">
+                                    <div class="pull-left"><input class="ApplyPromo" type="text"></div>
+                                    <div class="pull-right"><button class="submitPromo">Apply</button></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row margin-0-l-r">
+                            <button class="row margin-0-l-r ButtonCollapsed" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                                <div class="pull-left">Payment</div>
+                                <div class="pull-right"><i class="fas fa-chevron-up"></i></div>
+                            </button>
+
+                            <div class="contentCollapse collapse in" id="collapseExample2" aria-expanded="false" style="height: 0px;">
+                                <div class="row margin-0-l-r">
+                                    <div class="pull-left">Subtotal</div>
+                                    <div class="pull-right">850 EGP</div>
+                                </div>
+                                <div class="row margin-0-l-r">
+                                    <div class="pull-left">Tax</div>
+                                    <div class="pull-right">25 EGP</div>
+                                </div>
+                                <hr>
+                                <div class="row margin-0-l-r">
+                                    <div class="pull-left">Total</div>
+                                    <div class="pull-right">875 EGP</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footerCheckOut">
+                            875 EGP
+                        </div>
+                    </div>
+                    <div class="row margin-0-l-r text-center MobileOnly">
+                        <a class="btnBlue width100" id="Step1" href="#">Continue</a>
+                    </div>
+
+                </div>
+                <div class="col-md-9 pull-right-not-responsive">
+
+                    <div class="row margin-0-l-r bold NoMobile">
+                        <div class="pull-left">Personal Information</div>
+                    </div>
+                    <div class="SecCheckOut row margin-0-l-r Step2">
+                        <h4 class="TitleHeader NoMobile">General Information</h4>
+                        <div class="row margin-0-l-r form-group">
+                            <div class="col-md-12 no-padding">
+                                <div class="col-md-2 no-padding">
+                                    <div class="row margin-0-l-r">
+                                        <div class="col-md-12">
+                                            <label class="control-label"></label>
+                                            <select class="form-control">
+                                                <option>mr</option>
+                                                <option>msr</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-10 no-padding">
+                                    <div class="row margin-0-l-r">
+                                        <div class="col-md-4">
+                                            <label class="control-label">FIRST NAME</label>
+                                            <input type="text" placeholder="FIRST NAME" class="form-control" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="control-label">Middle NAME</label>
+                                            <input type="text" placeholder="Middle NAME" class="form-control" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="control-label">LAST NAME</label>
+                                            <input type="text" placeholder="LAST NAME" class="form-control" />
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row margin-0-l-r form-group">
+                            <div class="col-md-6 no-padding">
+                                <label class="control-label col-md-12">BIRTHDAY</label>
+                                <div class="row margin-0-l-r">
+                                    <div class="col-md-4">
+                                        <select class="form-control select2">
+                                            <option disabled selected>Day</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                            <option>13</option>
+                                            <option>14</option>
+                                            <option>15</option>
+                                            <option>16</option>
+                                            <option>17</option>
+                                            <option>18</option>
+                                            <option>19</option>
+                                            <option>20</option>
+                                            <option>21</option>
+                                            <option>22</option>
+                                            <option>23</option>
+                                            <option>24</option>
+                                            <option>25</option>
+                                            <option>26</option>
+                                            <option>27</option>
+                                            <option>28</option>
+                                            <option>29</option>
+                                            <option>30</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-control select2">
+                                            <option disabled selected>Week</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-control select2">
+                                            <option disabled selected>Month</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row margin-0-l-r form-group">
+                            <div class="col-md-4">
+                                <label class="control-label">EMAIL</label>
+                                <input type="text" placeholder="Example@HotelBirds.com" class="form-control" />
+                            </div>
+                            <div class="col-md-4">
+                                <label class="control-label">CONFORMATION EMAIL</label>
+                                <input type="text" placeholder="Example@HotelBirds.com" class="form-control" />
+                            </div>
+                            <div class="col-md-4">
+                                <label class="control-label">PHONE</label>
+                                <input type="text" placeholder="+20 XXXXXXX" class="form-control" />
+                            </div>
+                        </div>
+
+                        <h4 class="TitleHeader">Passport Information</h4>
+                        <div class="row margin-0-l-r form-group">
+                            <div class="col-md-4">
+                                <label class="control-label">PASSPORT NO.</label>
+                                <input type="text" placeholder="123456789" class="form-control" />
+                            </div>
+                            <div class="col-md-4">
+                                <label class="control-label">COUNTRY</label>
+                                <select class="form-control select2">
+                                    <option>Egypt</option>
+                                    <option>USA</option>
+                                    <option>AUE</option>
+                                    <option>Sudan</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="control-label">NATIONAILTY</label>
+                                <select class="form-control select2">
+                                    <option>Egyptian</option>
+                                    <option>USA</option>
+                                    <option>AUE</option>
+                                    <option>Sudanian</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row margin-0-l-r form-group">
+                            <div class="col-md-6 padding-5-l-r">
+                                <div class="row BCGroubing">
+                                    <label class="control-label col-md-12">ISSUE DATE</label>
+                                    <div class="row margin-0-l-r">
+                                        <div class="col-md-4">
+                                            <select class="form-control select2">
+                                                <option disabled selected>Day</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                                <option>18</option>
+                                                <option>19</option>
+                                                <option>20</option>
+                                                <option>21</option>
+                                                <option>22</option>
+                                                <option>23</option>
+                                                <option>24</option>
+                                                <option>25</option>
+                                                <option>26</option>
+                                                <option>27</option>
+                                                <option>28</option>
+                                                <option>29</option>
+                                                <option>30</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-control select2">
+                                                <option disabled selected>Week</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-control select2">
+                                                <option disabled selected>Month</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 padding-5-l-r">
+                                <div class="row BCGroubing">
+
+                                    <label class="control-label col-md-12">EXPIRY DATE</label>
+                                    <div class="row margin-0-l-r">
+                                        <div class="col-md-4">
+                                            <select class="form-control select2">
+                                                <option disabled selected>Day</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                                <option>18</option>
+                                                <option>19</option>
+                                                <option>20</option>
+                                                <option>21</option>
+                                                <option>22</option>
+                                                <option>23</option>
+                                                <option>24</option>
+                                                <option>25</option>
+                                                <option>26</option>
+                                                <option>27</option>
+                                                <option>28</option>
+                                                <option>29</option>
+                                                <option>30</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-control select2">
+                                                <option disabled selected>Week</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-control select2">
+                                                <option disabled selected>Month</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row margin-0-l-r text-center MobileOnly">
+                        <a class="btnBlue width100" id="Step2" href="#">Continue</a>
+                    </div>
+                    <div class="row margin-0-l-r bold NoMobile">
+                        <div class="pull-left">Payment Information</div>
+                    </div>
+                    <div class="SecCheckOut row margin-0-l-r Step3">
+                        <div class="row margin-0-l-r form-group">
+                            <div class="col-md-7 no-padding">
+                                <label class="control-label col-md-12">CARD NUMBER</label>
+                                <div class="row margin-0-l-r">
+                                    <div class="col-md-9 col-xs-8">
+                                        <input placeholder="1234 - 5678 - 3456 - 2456" class="form-control" />
+                                    </div>
+                                    <div class="col-md-3 col-xs-4">
+                                        <div class="LogoVisa">
+                                            <img src="~/SiteStyle/images/visa.png" />
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row margin-0-l-r form-group">
+                            <div class="col-md-7 no-padding">
+                                <label class="control-label col-md-12">CARDHOLDER NAME</label>
+                                <div class="row margin-0-l-r">
+                                    <div class="col-md-12">
+                                        <input placeholder="John Doe" class="form-control" />
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row margin-0-l-r form-group">
+                            <div class="col-md-7 no-padding">
+                                <div class="row margin-0-l-r">
+
+
+                                    <div class="col-md-4">
+                                        <label class="control-label">EXPIRE DATE</label>
+                                        <select class="form-control select2">
+                                            <option>Egypt</option>
+                                            <option>USA</option>
+                                            <option>AUE</option>
+                                            <option>Sudan</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="control-label"></label>
+                                        <select class="form-control select2">
+                                            <option>year</option>
+                                            <option>2019</option>
+                                            <option>2020</option>
+                                            <option>2021</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="control-label">CVV</label>
+                                        <input type="text" placeholder="123" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row margin-0-l-r text-center MobileOnly">
+                        <a class="btnBlue width100" id="Step3" href="#">Continue</a>
+                    </div>
+                    <div class="row margin-0-l-r text-center NoMobile">
+                        <a class="btnBlue btnGray" href="#"> Back</a>
+                        <a class="btnBlue" href="#">Book Now</a>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+        $(document).ready(function () {
+            if ($(window).width() < 991) {
+                $("#Step2").hide();
+                $("#Step3").hide();
+                $(".Steps1").addClass("activeSteps");
+                $(".Step2").hide();
+                $(".Step3").hide();
+            }
+
+        });
+        $("#Step1").click(function () {
+            $(".Step1").hide();
+            $("#Step1").hide();
+            $(".Step2").show();
+            $("#Step2").show();
+            $(".Steps2").addClass("activeSteps");
+        })
+        $("#Step2").click(function () {
+            $(".Step2").hide();
+            $("#Step2").hide();
+            $(".Step3").show();
+            $("#Step3").show();
+            $(".Steps3").addClass("activeSteps");
+        })
+</script>

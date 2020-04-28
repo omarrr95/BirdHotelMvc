@@ -1,0 +1,2171 @@
+﻿
+@font-face {
+    font-family: 'HelveticaNeueLight';
+    src: url('../fonts/HelveticaNeueLight.ttf') format('truetype');
+}
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'HelveticaNeueLight';
+}
+*:before, *:after {
+    -webkit-box-sizing: unset;
+    -moz-box-sizing: unset;
+    box-sizing: unset;
+}
+.dtp {
+    z-index: 999999;
+}
+body {
+    background-color: #f7f7f7;
+}
+.inlineblock {
+    display: inline-block;
+}
+.no-padding {
+    padding: 0;
+}
+.bold {
+    font-weight: 600;
+}
+.font9 {
+    font-size: 9px;
+}
+.padding-5-l-r {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.padding-top-btn-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.padding-top-btn-24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.margin-0-l-r {
+    margin-right: 0;
+    margin-left: 0;
+}
+.marginbtn20 {
+    margin-bottom: 20px;
+}
+.margrinbtn10 {
+    margin-bottom: 10px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.styled-select select {
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none;
+}
+
+.Header {
+    background-color: #1AAFED;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    padding: 4px;
+    z-index: 9999;
+}
+
+    .Header button {
+        color: #fff;
+        border: none;
+    }
+
+.navbar-fixed-top {
+    top: 38px;
+    background-color: #fff;
+    border: 0;
+    margin-bottom: 0;
+}
+
+    .navbar-fixed-top .navbar-brand {
+        padding: 0;
+    }
+
+        .navbar-fixed-top .navbar-brand img {
+            position: relative;
+        }
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #1AAFED;
+    font-size: 19px;
+    font-weight: 400;
+}
+.width100 {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+@media (min-width: 992px) {
+    .NormalMobileShow {
+        display: none !important;
+    }
+    .MobileOnly {
+        display: none;
+    }
+    .width92 {
+        width: 92%;
+    }
+    .width20 {
+        width: 20%;
+        padding: 0 5px;
+    }
+    .width60 {
+        width: 60%;
+        padding: 0 5px;
+    }
+    
+    .navbar-inverse .navbar-nav > li > a {
+        padding: 50px 30px;
+    }
+
+    .navbar-fixed-top .navbar-brand img {
+        top: 12px;
+    }
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #3a3a3a;
+    border-bottom: 4px solid #1AAFED;
+}
+
+.StyleDropDown {
+    display: inline-block;
+}
+
+    .StyleDropDown.Login button {
+        border: 1px solid #fff;
+        padding: 2px 10px;
+        border-radius: 10px;
+    }
+
+    .StyleDropDown button,
+    .StyleDropDown button:hover,
+    .StyleDropDown button:focus,
+    .StyleDropDown.open > .dropdown-toggle.btn-default:hover,
+    .StyleDropDown .btn-default:active:hover {
+        background-color: transparent;
+        border: none;
+        color: #fff;
+    }
+
+.PhotoSec {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0 0;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+    .PhotoSec.MinHight {
+        min-height: 350px;
+    }
+
+    .PhotoSec h1 {
+        margin-bottom: 25px;
+        font-size: 59px;
+        margin-top: 40px;
+    }
+
+    .PhotoSec h4 {
+        margin-bottom: 60px;
+    }
+
+    .PhotoSec img.ImgBg {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        left: 0;
+        top: 0;
+        z-index: -2;
+    }
+
+    .PhotoSec .overLay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        background-color: #000;
+        opacity: 0.2;
+    }
+
+.PhotoSecAirCompany.PhotoSec .ImgAirport {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+}
+
+    .PhotoSecAirCompany.PhotoSec .ImgAirport img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+    }
+
+.PhotoSecAirCompany.PhotoSec .content {
+    display: inline-block;
+    padding: 10px;
+    text-align: start;
+    position: relative;
+    top: 18px;
+}
+
+    .PhotoSecAirCompany.PhotoSec .content p {
+        font-size: 26px;
+    }
+
+    .PhotoSecAirCompany.PhotoSec .content h5 {
+        color: #3a3a3a;
+        font-weight: 900;
+    }
+
+.PhotoSecAirCompany {
+    padding: 40px 0;
+}
+
+    .PhotoSecAirCompany .overLay {
+        background-color: #1AAFED;
+        opacity: 0.5;
+    }
+
+.HomeTabContainer {
+    padding: 30px 0;
+    background-color: #f7f7f7;
+}
+
+.AirCompanyTabContainer {
+    padding: 0px 0 30px;
+    margin-top: -15px;
+    background-color: #fff;
+}
+
+    .AirCompanyTabContainer ul {
+        position: relative;
+        top: -16px;
+    }
+
+.body-content {
+    margin-top: 162px;
+    padding: 0;
+}
+
+.SecActionLink {
+    position: relative;
+    top: 0px;
+}
+
+    .SecActionLink .link {
+        background-color: rgba(0, 0, 0, 0.38);
+        padding: 11px 35px 10px;
+        margin: 0 16px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 19px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        display: inline-block;
+    }
+
+        .SecActionLink .link.linkActive {
+            background-color: #1AAFED;
+        }
+
+        .SecActionLink .link img {
+            width: 27px;
+        }
+
+.HomeTab {
+    padding: 0;
+    text-align: center;
+}
+
+    .HomeTab .nav-item {
+        background-color: transparent;
+        float: unset;
+        display: inline-block;
+    }
+
+        .HomeTab .nav-item a {
+            background-color: #505050;
+            color: #ababab;
+            border-radius: 25px;
+            padding: 7px 25px;
+            margin: 0 7px;
+        }
+
+            .HomeTab .nav-item.active a,
+            .HomeTab .nav-item a:hover,
+            .HomeTab .nav-item a:focus {
+                background-color: #1AAFED !important;
+                color: #fff;
+            }
+
+#myTabContent .Sec {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin-top: 15px;
+    display: flex;
+    background-color: #fff;
+}
+
+#myTabContent .Sec div:last-child{
+    border:none;
+}
+
+.Sec .details {
+    display: inline-block;
+    text-align: center;
+    padding: 17px 0 2px;
+    min-height: 78px;
+}
+
+.Sec .input-group-addon:first-child {
+    background-color: transparent;
+    border: none;
+    padding: 0 6px;
+    font-size: 21px;
+}
+
+.Sec input {
+    border: none;
+    box-shadow: none;
+}
+
+.btn-date {
+    border-radius: 10px;
+    margin: 0 4px;
+    padding: 4px 16px;
+}
+
+.dtp-btn-cancel {
+    background-color: #505050;
+    color: #fff;
+}
+
+.dtp-btn-ok {
+    background-color: #1AAFED;
+    color: #fff;
+}
+
+.Sec .details {
+    width: 42%;
+}
+.Sec.MultiCitySec .details {
+    width: 50%;
+}
+
+ .Sec .depart, .Sec .return {
+    width: 18%;
+}
+
+.Sec .Passanger{
+    width: 15%;
+}
+    .Sec .Passanger .Information {
+        display: table-cell;
+        vertical-align: middle;
+    }
+.Sec .Search {
+    width: 7%;
+}
+
+
+.MultiCity .Sec .AddPlain {
+    width: 33.33%;
+}
+
+.MultiCity .AddPlain {
+    padding: 30px 20px;
+}
+
+    .MultiCity .AddPlain i {
+        font-size: 15px;
+        color: #1AAFED;
+        margin: 0 7px;
+    }
+
+    .MultiCity .AddPlain a {
+        font-size: 15px;
+        color: #3a3a3a;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.Sec .depart, .Sec .return {
+    display: inline-block;
+    text-align: center;
+    padding: 22px 5px;
+}
+
+.Sec .Passanger{
+    display: table;
+    padding: 27px 7px;
+}
+
+.Sec .Search {
+    display: flex;
+    padding: 20px 7px;
+    background-color: #1AAFED;
+    color: #fff;
+}
+
+    .Sec .Search button {
+        display: block;
+        width: 100%;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    }
+
+        .Sec .Search button:focus {
+            border: none;
+            background-color: transparent;
+        }
+
+        .Sec .Search button i {
+            font-size: 33px;
+        }
+
+.Sec .Passanger i {
+    font-size: 25px;
+    margin: 0 10px;
+    position: relative;
+    width: 18px;
+    top: 0px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.Sec .Passanger select {
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.Sec .Passanger .select2-container {
+    width: 100% !important;
+}
+.Sec .Children img {
+    width: 26px;
+    height: 26px;
+    margin: 0 5px;
+    position: relative;
+    top: 4px;
+}
+
+.Sec .Passanger .Information label,
+.Sec .Children .Information label {
+    font-size: 10px;
+    text-align: start;
+    display: block;
+    margin-bottom: 1px;
+    color: #ababab;
+}
+
+.Sec .Passanger .Information p,
+.Sec .Passanger .Information p,
+.Sec .Children .Information p {
+    font-weight: 600;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+    .Sec .Passanger .Information p input,
+    .Sec .Children .Information p input {
+        width: 23px;
+        /*border: 1px solid #ccc;*/
+        line-height: 8px;
+        text-align: center;
+    }
+
+.Sec .details img {
+    width: 22px;
+}
+
+.Sec .details .secDetials {
+    display: inline-block;
+    margin: 0 0px;
+    text-align: start;
+    width: 44%;
+}
+.Sec .details .secDetials  i{
+    position: relative;
+    top: -5px;
+    font-size: 22px;
+    margin: 0 7px;
+}
+    .Sec .details .secDetials p {
+        margin-bottom: 0;
+        height: 44px;
+    }
+        .Sec .details .secDetials p input:focus {
+            outline: none;
+            border-bottom: 1px solid #ccc;
+        }
+        .Sec .details .secDetials label {
+            font-size: 10px;
+            text-align: start;
+            display: block;
+            margin-bottom: 1px;
+            color: #ababab;
+        }
+
+.title {
+    text-align: center;
+    position: relative;
+    margin-top: 35px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+    .title.titleStart {
+        text-align: start;
+    }
+
+        .title.titleStart .titleStartLabel {
+            display: inline-block;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #1AAFED;
+        }
+
+        .title.titleStart .titleBlockLabel {
+            display: block;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #1AAFED;
+            font-size: 20px;
+        }
+
+    .title img.Icon {
+        width: 28px;
+    }
+
+    .title img.Line {
+        width: 70px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .title span {
+        color: #1AAFED;
+    }
+
+.itemSec {
+    position: relative;
+    height: 260px;
+    padding: 30px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.PhotoSec .itemSec {
+    position: absolute;
+    width: 100%;
+    text-align: start;
+    bottom: 0;
+    height: auto;
+    padding: 20px 60px;
+}
+
+.itemSec img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    transition: all 0.3s;
+}
+
+.itemSec .overLayImg {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.itemSec:hover img {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.itemSec h5 b {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 6px;
+    min-width: 70px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.itemSec p {
+    color: #fff;
+    font-size: 15px;
+}
+
+.SectionInformation {
+    margin: 0 0 20px;
+    background-color: #1AAFED;
+    padding: 40px 0 60px;
+    text-align: center;
+    color: #fff;
+}
+
+    .SectionInformation .Sec {
+        padding: 0 30px;
+    }
+
+        .SectionInformation .Sec .SecImg {
+            position: relative;
+            height: 53px;
+            margin-bottom: 30px;
+        }
+
+        .SectionInformation .Sec img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: inherit;
+            height: initial;
+            max-height: 39px;
+            max-width: 38%;
+            margin-bottom: 10px;
+        }
+
+        .SectionInformation .Sec h6 {
+            font-weight: 600;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .SectionInformation .Sec p {
+            font-weight: 600;
+            font-size: 10px;
+            margin-bottom: 10px;
+        }
+
+.SectionInformation {
+    margin-bottom: 20px
+}
+
+.TopFooter {
+    text-align: start;
+}
+
+    .TopFooter a {
+        font-size: 13px;
+        padding: 4px 10px;
+        color: #3a3a3a;
+        font-weight: 600;
+        display: block;
+        margin: 15px 0px;
+    }
+
+.FooterSec {
+    background-color: #2B2B2B;
+}
+
+.FooterSec {
+    background-color: #2B2B2B;
+    padding: 20px 0 30px;
+}
+
+    .FooterSec img {
+        width: 110px;
+        margin: 10px 0 20px;
+    }
+
+    .FooterSec label {
+        display: block;
+        margin: 44px 0px 20px;
+        padding: 4px 10px;
+        color: #ababab;
+    }
+
+    .FooterSec a {
+        font-size: 12px;
+        padding: 4px 10px;
+        color: #fff;
+        font-weight: 600;
+        display: block;
+        margin: 10px 0px;
+    }
+
+.Social {
+    margin-top: 20px;
+    padding-top: 8px;
+    border-top: 2px solid #5d5d5d;
+}
+
+    .Social ul {
+        padding: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+        .Social ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+            .Social ul li a {
+                background-color: #fff;
+                border-radius: 50%;
+                color: #3a3a3a;
+                transition: all 0.3s;
+            }
+
+                .Social ul li a:hover {
+                    background-color: #1AAFED;
+                    border-radius: 50%;
+                    color: #fff;
+                    transition: all 0.3s;
+                }
+
+                .Social ul li a i {
+                    font-size: 18px;
+                    height: 27px;
+                    width: 18px;
+                    line-height: 26px;
+                }
+
+.FooterSec .Social p {
+    color: #fff;
+    margin-top: 20px;
+    margin: 0;
+}
+
+    .FooterSec .Social p a {
+        display: inline-block;
+        color: #1AAFED;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+    }
+
+.itemHotel .itemSec {
+    margin-bottom: 0;
+}
+
+.itemHotel .itemSec {
+    margin-bottom: 0;
+}
+
+.itemHotel .BookSec {
+    border: 1px solid #a9a5a5;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+
+    .itemHotel .BookSec h4,
+    .itemHotel .BookSec h6 {
+        margin: 5px 0;
+    }
+
+.itemHotel .btn {
+    background-color: #1aafed;
+    color: #fff;
+    padding: 3px 22px;
+    border-radius: 0;
+    margin: 8px 0;
+}
+
+.itemHotel .BookSec h6 {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.Rating {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 0 25px;
+    bottom: 20px;
+    color: #e0e0e0;
+}
+
+.ContentSecAir {
+    padding: 30px 0;
+    background-color: #f7f7f7;
+}
+
+    .ContentSecAir .Sec {
+        background-color: #FFF;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        padding: 20px 30px;
+        margin: 20px 0;
+    }
+    .ContentSecAir .Sec.Summary {
+        background-color: #FFF;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        padding: 0 15px 0px;
+        margin: 20px 0;
+    }
+        .ContentSecAir .Sec.Summary .rowDetails {
+            padding: 6px 10px;
+            border-bottom: 1px solid #777;
+            margin: 0 -15px
+        }
+     .SecCheckOut {
+        background-color: #FFF;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        padding: 15px;
+        margin: 10px 0 30px;
+    }
+        .SecCheckOut .DivContent {
+         padding: 10px 0;
+         border-bottom: 1px solid #ccc;
+         margin: 0;
+        }
+            .SecCheckOut .DivContent h5 {
+                font-size: 11px;
+                margin: 7px 0;
+            }
+            .ContentSecAir .AcceptFilters {
+                width: 100%;
+                display: block;
+                padding: 10px;
+                color: #fff;
+                background-color: #1AAFED;
+                border: none;
+                border-radius: 10px;
+                margin: 20px 0 10px;
+            }
+.ContentSecAir .SecCheckOut .Sec {
+    margin: 10px 0;
+    padding: 10px 5px;
+}
+    .ContentSecAir .SecCheckOut label.control-label {
+        font-size: 12px;
+        min-height: 15px;
+
+    }
+    .ContentSecAir .DoneView {
+        width: 600px;
+        margin: 20px auto;
+        max-width: 98%;
+    }
+    .ContentSecAir  .btnBlue {
+        padding: 7px 35px;
+        border-radius: 20px;
+        color: #fff;
+        background-color: #1AAFED;
+        text-decoration: none;
+        text-align: center;
+        margin: 10px 5px;
+        display: inline-block;
+    }
+        .ContentSecAir  .btnBlue.btnGray {
+            color: #888585;
+            background-color: #dadada;
+
+        }
+    .ContentSecAir .DoneView .Sec.SecDoneView {
+        text-align: center;
+
+    }
+    .ContentSecAir .DoneView .Sec.InformationDone {
+       padding: 20px 50px;
+    }
+    .ContentSecAir .DoneView .Sec.InformationDone h6 {
+       color: #1AAFED;
+    }
+
+.ContentSecAir .DoneView .Sec.SecDoneView i {
+    color: #1aafed;
+    font-size: 35px;
+    margin: 30px 0 20px;
+}
+        .ContentSecAir .DoneView .Sec.SecDoneView p{
+        }
+    .ContentSecAir .DoneView .Sec.PlaneSec {
+    padding: 10px;
+    }
+    .ContentSecAir .DoneView .Sec.PlaneSec .col-xs-4 {
+        padding: 0;
+        color: #777;
+        font-size:12px;
+    }
+    .ContentSecAir .DoneView .Sec.PlaneSec .bold .col-xs-4 {
+        color: #3a3a3a;
+        font-weight: 600;
+    }
+    .ContentSecAir .Sec.LowPadding {
+        padding: 10px 15px;
+    }
+
+        .ContentSecAir .Sec.ImgCompany {
+            padding: 0;
+            width: 100%;
+            height: 180px;
+        }
+
+            .ContentSecAir .Sec.ImgCompany img {
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+            }
+
+        .ContentSecAir .Sec .tab-content {
+            padding: 10px;
+        }
+
+        .ContentSecAir .Sec .itemTrip {
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            padding: 12px;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+            .ContentSecAir .Sec .itemTrip p {
+                margin-bottom: 0;
+                line-height: 30px;
+            }
+
+            .ContentSecAir .Sec .itemTrip img {
+                margin: 5px 0;
+            }
+
+            .ContentSecAir .Sec .itemTrip p span {
+                color: #ababab;
+            }
+
+            .ContentSecAir .Sec .itemTrip button {
+                background-color: #1AAFED;
+                color: #fff;
+            }
+
+.SeeLess {
+    display: none;
+}
+
+.BtnSee {
+    border: none;
+    background-color: transparent;
+    color: #1aafed;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 4px;
+    border-top: 3px solid;
+    margin-top: 10px;
+}
+
+.ContentSecAir .SecAd {
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    padding: 12px 14px;
+    margin: 20px 0;
+}
+
+    .ContentSecAir .SecAd .ColorGreen {
+        color: green;
+    }
+
+    .ContentSecAir .SecAd span {
+        border: 1px solid green;
+        color: green;
+        padding: 2px;
+    }
+
+    .ContentSecAir .SecAd h4 {
+        font-size: 14px;
+        font-weight: 600;
+        color: #777;
+    }
+
+    .ContentSecAir .SecAd h5 {
+        font-size: 14px;
+        color: #777;
+        margin-bottom: 20px;
+    }
+
+    .ContentSecAir .SecAd a {
+        color: green;
+        border: 1px solid green;
+        padding: 5px 8px;
+        border-radius: 25px;
+    }
+
+.Sec .containerAirlines {
+    height: 240px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+    .Sec .containerAirlines.autoHight {
+        height: auto;
+        transition: all 0.3s;
+    }
+
+    .Sec .containerAirlines .LineAir {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+        .Sec .containerAirlines .LineAir img {
+            margin: 2px 5px;
+            height: 14px;
+        }
+
+#pagination-container ul {
+    padding: 0;
+    text-align: center;
+}
+
+    #pagination-container ul li {
+        list-style: none;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background-color: #ababab;
+        margin: 0 3px;
+        border-radius: 50%;
+        color: #ababab;
+        font-size: 11px;
+    }
+
+        #pagination-container ul li a,
+        #pagination-container ul li span {
+            color: #ababab;
+        }
+
+        #pagination-container ul li.active {
+            background-color: #1AAFED;
+            color: #1AAFED;
+        }
+
+            #pagination-container ul li.active a,
+            #pagination-container ul li.active span {
+                color: #1AAFED;
+            }
+
+        #pagination-container ul li:first-child,
+        #pagination-container ul li:last-child {
+            display: none;
+        }
+
+ul.AirTab {
+    border-bottom: 1px solid #ccc;
+    padding: 0;
+}
+
+    ul.AirTab li:last-child {
+        border-left: none;
+    }
+
+    ul.AirTab li {
+        padding: 0 15px;
+    }
+
+        ul.AirTab li a {
+            border-bottom: 3px solid transparent;
+        }
+
+            ul.AirTab li a,
+            ul.AirTab li a:hover,
+            ul.AirTab li a:focus {
+                background-color: transparent;
+                color: #3a3a3a;
+                border-radius: 0;
+                padding: 10px 0px;
+            }
+
+                ul.AirTab li a:hover,
+                ul.AirTab li a:focus,
+                ul.AirTab li.active a {
+                    border-bottom: 3px solid #1aafed;
+                    background-color: transparent !important;
+                    color: #3a3a3a !important;
+                }
+
+.lightSlider .lslide img {
+    width: 100%;
+}
+
+.lSSlideOuter.vertical .lSGallery {
+    padding: 0;
+    width: 140px !important;
+}
+
+.lSSlideOuter .lSPager.lSGallery li {
+    height: 97px !important;
+}
+
+    .lSSlideOuter .lSPager.lSGallery li img {
+        height: 100% !important;
+    }
+
+.HeaderHotel h4 {
+    color: #1AAFED;
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.HeaderHotel h6 {
+    color: #ababab;
+    margin-top: 5px;
+}
+
+    .HeaderHotel h6 i {
+        padding: 0 3px;
+    }
+
+.HeaderHotel .fa-star {
+    color: #ffa500;
+    font-size: 11px;
+}
+
+.Descriptopn h5,
+.Rooms h5 {
+    font-weight: 600;
+    color: #1AAFED;
+}
+
+.Descriptopn p {
+    height: 80px;
+    overflow: hidden;
+    transition: all 0.3s;
+    font-size: 12px;
+}
+
+    .Descriptopn p.autoHight {
+        height: auto;
+        transition: all 0.3s;
+    }
+
+.Descriptopn .BtnSee {
+    color: #777;
+    border-top: none;
+}
+
+.Rooms {
+}
+
+    .Rooms .SecRoom {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 20px 0 5px;
+    }
+
+        .Rooms .SecRoom .ImgRoom {
+            display: inline-table;
+            width: 160px;
+            height: 130px;
+            vertical-align: top;
+        }
+
+            .Rooms .SecRoom .ImgRoom img {
+                width: 100%;
+                height: 100%;
+            }
+
+        .Rooms .SecRoom .ContentRoom {
+            display: inline-table;
+            vertical-align: top;
+        }
+
+            .Rooms .SecRoom .ContentRoom h5 {
+                color: #333;
+                font-size: 17px;
+                margin: 0;
+                margin-bottom: 6px;
+                margin-top: 2px;
+            }
+
+            .Rooms .SecRoom .ContentRoom .ServicesRoom {
+            }
+
+                .Rooms .SecRoom .ContentRoom .ServicesRoom p {
+                    display: inline-block;
+                    width: 45%;
+                    margin-bottom: 10px;
+                }
+
+                    .Rooms .SecRoom .ContentRoom .ServicesRoom p img {
+                        margin: 0 3px;
+                    }
+
+                .Rooms .SecRoom .ContentRoom .ServicesRoom h5 {
+                }
+
+            .Rooms .SecRoom .ContentRoom h6 {
+                margin: 7px 0;
+                color: #666;
+            }
+
+                .Rooms .SecRoom .ContentRoom h6 img {
+                }
+
+        .Rooms .SecRoom .Prices {
+            color: #777;
+        }
+
+            .Rooms .SecRoom .Prices h6 {
+                margin: 5px 0;
+            }
+
+            .Rooms .SecRoom .Prices h1 {
+                font-size: 27px;
+                font-weight: 900;
+                margin: 4px 0;
+                color: #3a3a3a;
+            }
+
+            .Rooms .SecRoom .Prices .Book {
+                width: 100%;
+                text-align: center;
+                display: block;
+                color: #fff;
+                background-color: #1aafed;
+                padding: 11px 0;
+                border-radius: 10px;
+                margin-top: 10px;
+            }
+
+.contentCollapse {
+    font-size: 12px;
+    color: #777;
+}
+
+.ButtonCollapsed:focus {
+    outline: none;
+}
+
+.contentCollapse .row {
+    margin-bottom: 5px;
+}
+
+.contentCollapse .ApplyPromo {
+    margin-top: 15px;
+    border: 2px solid #1aafed;
+    border-radius: 25px;
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    padding: 7px;
+}
+
+.contentCollapse .submitPromo {
+    border: none;
+    margin-top: 15px;
+    background-color: #1aafed;
+    color: #fff;
+    padding: 11px 17px;
+    border-radius: 15px;
+}
+
+.contentCollapse a {
+    text-decoration: underline;
+    color: #777;
+}
+
+.ButtonCollapsed {
+    margin-top: 20px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    padding: 0;
+    color: #1aafed;
+    font-weight: 600;
+    margin-bottom: 7px;
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+}
+
+.Passanger {
+    position: relative;
+}
+.ViewCount {
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    z-index: 999;
+    width: 300px;
+    top: 90px;
+    left: 0;
+    text-align: start;
+}
+    .ViewCount .Quantity {
+        /*background-color: #fff;
+        -webkit-box-shadow: 0 0 10px rgba(39, 39, 39, 0.3);
+        box-shadow: 0 0 10px rgba(39, 39, 39, 0.3);
+        border-radius: 20px;
+        text-align: center;
+        width: 120px;*/
+    }
+        .ViewCount .Quantity p {
+            display: inline-block;
+            width: 38px;
+            text-align: center;
+            font-size: 20px;
+            margin: 0;
+        }
+        .ViewCount .Quantity button {
+            font-size: 31px;
+            line-height: 10px;
+            position: relative;
+            top: 2px;
+            border: none;
+            background-color: #1aafed;
+            color: #fff;
+            width: 30px;
+            height: 30px;
+        }
+            .ViewCount .Quantity button:hover {
+                color: #fff;
+            }
+            .ViewCount .Quantity button:focus {
+                outline: none;
+            }
+            .ViewCount .Quantity button.max {
+                font-size: 24px;
+                top: 0px;
+            }
+
+.TitleHeader {
+    color: #000;
+    font-weight: 600;
+    padding: 5px 5px;
+    margin-bottom: 25px;
+    margin-top:10px;
+}
+.BCGroubing {
+    margin: 0;
+    background-color: #f9f9f9;
+    padding: 10px 0;
+    border-color: #ccc;
+    border-radius: 10px;
+}
+.select2-container--default .select2-selection--single {
+    min-height: 33px
+}
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        line-height: 33px ;
+    }
+
+.LogoVisa {
+    height: 34px;
+    text-align: center;
+    border: 1px solid #1AAFED;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+}
+
+.LogoVisa img{
+    width: 68px;
+}
+.HeaderCheckOut {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 19px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 0 -15px 20px;
+}
+.footerCheckOut {
+    padding: 10px;
+    background-color: #1AAFED;
+    color: #fff;
+    text-align: center;
+    font-size: 19px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 20px -15px 0px;
+}
+.bluecolor {
+    color: #1AAFED;
+}
+.text-gray {
+    color: #aaa;
+}
+.ImgSec img {
+    width: 100%;
+}
+.margintop0 {
+    margin-top: 0;
+}
+.marginbot0 {
+    margin-bottom: 0;
+}
+.SecError {
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 0px 30px 20px;
+    width:800px;
+    max-width:  90%;
+    margin: 120px auto 30px;
+    text-align: center;
+}
+.SecError img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.BirdSlider .item img {
+    display: inline-block;
+    height: 50px;
+    width: 58px;
+    margin: 0 5px;
+}
+.BirdSlider .item .itemContent {
+    display: inline-block;
+}
+.BirdSlider .item {
+    background-color: #fff;
+    padding: 2px 8px 9px;
+    height: 86px;
+}
+    .BirdSlider .item .itemContent{
+        position: relative;
+        top: 13px;
+    }
+.owl-carousel {
+    position: relative;
+}
+.owl-prev {
+    position: absolute;
+    right: -35px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 0;
+    height: 86px;
+    font-size: 33px;
+    background-color: #dcdcdc;
+    color: #969696;
+    padding: 10px !important;
+}
+    .owl-carousel .owl-nav button.owl-next:focus, .owl-carousel .owl-nav button.owl-prev:focus {
+        outline: none;
+    }
+    .owl-next {
+        left: -35px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+.BirdSlider{
+    width: calc(100% - 80px);
+    margin: auto;
+}
+.conatinerOption {
+    background-color: #1AAFED;
+    color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+    .conatinerOption button {
+        width: 49%;
+        margin: 0;
+        background-color: #1AAFED;
+        height: 85px;
+        border: none;
+        box-shadow: none;
+        text-align: start;
+        padding: 10px 15px;
+    }
+    .conatinerOption button.Chepest {
+     background-color: #2B2B2B;
+    }
+        .conatinerOption button img {
+            display: inline-block;
+            width: 30px;
+            position: relative;
+            top: -14px;
+            margin: 0 5px;
+        }
+    .conatinerOption button .detailsConatinerOption {
+        display: inline-block;
+    }
+
+.SidebarCheckBox input[type=checkbox] + label {
+    display: block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+    font-weight: 500;
+    font-size: 11px;
+}
+
+.SidebarCheckBox input[type=checkbox] {
+    display: none;
+}
+
+    .SidebarCheckBox input[type=checkbox] + label:before {
+        content: "\2714";
+        border: 0.1em solid #000;
+        border-radius: 0.2em;
+        display: inline-block;
+        width: 12px;
+        line-height: 16px;
+        height: 12px;
+        padding: 0 0.2em;
+        padding-bottom: 0.3em;
+        margin-right: 5px;
+        margin-left: 5px;
+        vertical-align: bottom;
+        color: transparent;
+        transition: .2s;
+    }
+.SidebarCheckBox.itemCheckBox input[type=checkbox] + label:before {
+    border: 0.1em solid #1AAFED;
+}
+    .SidebarCheckBox input[type=checkbox] + label:active:before {
+        transform: scale(0);
+    }
+
+    .SidebarCheckBox input[type=checkbox]:checked + label:before {
+        background-color: transparent;
+        border-color: #333;
+        color: #333;
+    }
+.SidebarCheckBox.itemCheckBox input[type=checkbox]:checked + label:before {
+    background-color: transparent;
+    border-color: #1AAFED;
+    color: #1AAFED;
+}
+    .SidebarCheckBox input[type=checkbox]:disabled + label:before {
+        transform: scale(1);
+        border-color: #aaa;
+    }
+
+    .SidebarCheckBox input[type=checkbox]:checked:disabled + label:before {
+        transform: scale(1);
+        background-color: #bfb;
+        border-color: #bfb;
+    }
+.SidebarCheckBox.itemCheckBox input[type=checkbox]:checked:disabled + label:before {
+    border-color: #1AAFED;
+    color: #1AAFED;
+}
+.RatingSidebarCheckBox i{
+    color: #1AAFED;
+}
+.itemCheckBox {
+    position: relative;
+    top: 13px;
+}
+.price-range-slider .range-value input {
+    margin: 0 0 10px;
+}
+.SecOptionSelect .ImgDes img {
+    display: inline-table;
+    width: 29px;
+    height: 37px;
+    vertical-align: middle;
+}
+.SecOptionSelect {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.SecOptionSelectDone {
+    border: 2px solid #1aafed;
+}
+.SecOptionSelect .ImgDes {
+    position: relative;
+    top: 6px;
+}
+    .SecOptionSelect .ImgDes .ContentWord {
+        text-align: start;
+        padding: 0 2px;
+        display: inline-table;
+        vertical-align: middle;
+    }
+        .SecOptionSelect .ImgDes .ContentWord h5,
+        .SecOptionSelect .ImgDes .ContentWord h6{
+            margin: 0;
+        }
+        .SecOptionSelect .ImgDes .ContentWord h5 {
+            margin-bottom: 5px;
+            font-size: 13px;
+        }
+            .SecOptionSelect .ImgDes .ContentWord h6 {
+                font-size: 10px;
+            }
+.LineDirectContainer h5 {
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+.LineDirect {
+    width: 70%;
+    height: 1px;
+    background-color: #6f6f6f;
+    margin: 10px auto;
+    position: relative;
+}
+    .LineDirect:after,
+    .LineDirect:before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        top: -4px;
+        left: -8px;
+        position: absolute;
+        border: 1px solid;
+    }
+    .LineDirect:before {
+        right: -8px;
+    }
+.LineDirectVertival {
+    height: 140px;
+    width: 1px;
+    background-color: #1AAFED;
+    margin: 10px auto;
+    position: relative;
+
+}
+    .LineDirectVertival:after,
+    .LineDirectVertival:before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        top: -7px;
+        right: -4px;
+        position: absolute;
+        background-color: #1AAFED;
+        border: 1px solid #1AAFED;
+    }
+
+    .LineDirectVertival:before {
+        bottom: -7px;
+        top: unset;
+    }
+    .LineDirectVertival img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-45%, -55%);
+        transform: translate(-45%, -55%);
+        max-height: 94px;
+        max-width: 100px;
+        background-color: #fff;
+        padding: 3px;
+    }
+.LineDirectContainer h6 {
+    font-size: 10px;
+    color: #777;
+    margin: 0;
+}
+.PriceChoose {
+    min-height: 78px;
+}
+.TwoWaySelect .PriceChoose {
+    min-height: 176px;
+    padding: 45px 11px;
+}
+.PriceChoose p {
+    color: #1AAFED;
+    font-size: 8px;
+    margin: 0;
+}
+    .PriceChoose h3 {
+        margin: 0;
+    }
+    .PriceChoose h6 {
+        margin: 0;
+    }
+    .PriceChoose h3 span{
+        font-size: 10px;
+        color: #777;
+    }
+    .PriceChoose .BookChoose {
+        background-color: #1aafed;
+        border: none;
+        color: #fff;
+        font-size: 11px;
+        padding: 6px 5px;
+        border-radius: 10px;
+        display: block;
+        width: 100%;
+        margin: 5px 0 0;
+    }
+        .PriceChoose .BookChoose.BookChooseGray {
+            background-color: #ccc;
+            color: #777;
+            display: none;
+        }
+.detailsSecOptionSelect {
+    background-color: #e2e2e2;
+    border: none;
+  
+    width: 100%;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+   
+    color: #777;
+}
+    .detailsSecOptionSelect button,
+    .detailsSecOptionSelect button:hover,
+    .detailsSecOptionSelect button:focus{
+        border: none;
+        background-color: transparent;
+        text-align: center;
+        outline: none;
+        color: #777;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        display: block;
+        padding: 3px;
+        font-size: 12px;
+        width: 100%;
+    }
+        .detailsSecOptionSelect button i {
+            margin: 0 5px;
+        }
+.detailsSecOptionSelectCntent {
+    padding: 13px 10px;
+    background-color: #F8F8F8;
+    display: none;
+}
+    .detailsSecOptionSelectCntent img {
+        width: 22px;
+        height: 17px;
+        margin: 0 3px;
+    }
+.detailsSecOptionSelect .ShowLess {
+    display: none;
+}
+.UnSelectedSecOptionSelect .SecOptionSelect.SecOptionSelectDone {
+    display: none;
+}
+.ItemSecContianer {
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+    .ItemSecContianer .itemSec {
+        height: 180px;
+        margin: 0;
+        z-index: 99;
+        padding: 20px 10px;
+    }
+    .ItemSecContianer .Rating {
+        padding: 0 10px;
+    }
+        .ItemSecContianer .Rating h6 {
+            margin: 6px 0;
+        }
+.ItemSecContianer .BookSec {
+    border: none;
+    margin-bottom: 5px;
+    padding: 10px 10px
+}
+.Map {
+    width: 100%;
+    height: 150px; 
+    overflow: hidden;
+    border-radius: 20px;
+}
+.price-range-slider .range-value input {
+    font-size: 13px;
+}
+.CheckDetails {
+
+}
+    .CheckDetails .bgGrayCheck {
+        background-color: #f1f1f1;
+        padding: 6px 10px;
+    }
+     .CheckDetails h6 {
+
+    }
+.smallGray {
+    font-size: 10px;
+    margin: 1px;
+    color: #adadad;
+}
+.CheckDetails  .imgContent img{
+   width: 20px;
+   height: 20px;
+   display: inline-block;
+}
+.ArriverdPlane .ArriverdPlaneSec h6{
+    margin: 0;
+}
+.ArriverdPlane .ArriverdPlaneSec{
+    margin: 10px 0;
+}
+.ArriverdPlane .ArriverdPlaneSec:last-child{
+    margin-top: 80px;
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control,.DisableSec {
+    background-color: #f7f7f7;
+    opacity: 0.7;
+}
+.dropdown-menu > li > a {
+    text-align: start;
+}
+@media (max-width: 992px) {
+    .Sec .details {
+        margin-top: 5px;
+    }
+    .Rooms .SecRoom .ImgRoom {
+        display: block;
+        width: 100%;
+        height: 126px;
+    }
+    ul.AirTab li {
+        padding: 0 0px;
+        width: 100%;
+        border: none;
+        background-color: #f7f7f7;
+        border-bottom: 1px solid #ccc;
+    }
+    ul.AirTab li a{
+        padding: 10px;
+    }
+        .lSSlideWrapper .lSSlide, .lSSlideOuter.vertical {
+        padding: 0 !important;
+    }
+        .lSSlideOuter.vertical .lSGallery {
+            display: none;
+        }
+        .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+            background-color: transparent;
+        }
+    .PhotoSec h4 {
+        margin-bottom:20px;
+    } 
+    .StyleDropDown.Login button, .StyleDropDown.Login button:hover, .StyleDropDown.Login button:focus, .StyleDropDown.open.Login > .dropdown-toggle.btn-default:hover, .StyleDropDown.Login .btn-default:active:hover {
+        border: 1px solid #000;
+        color: #1aafed;
+    }
+    .HomeTabContainer {
+        background-color: #1AAFED;
+    }
+    #myTabContent .Sec {
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+        #myTabContent .Sec .details {
+            width: 100%;
+            display: block;
+            border: none;
+        }
+            #myTabContent .Sec .details .secDetials p {
+                height: 26px;
+            }
+    #myTabContent .Sec .details img {
+        width: 27px;
+        position: relative;
+        top: -4px;
+    }
+            #myTabContent .Sec .details .secDetials, #myTabContent .Sec .depart, #myTabContent .Sec .return, #myTabContent .Sec .Passanger, #myTabContent .Sec .Search,
+            .MultiCity .Sec .AddPlain {
+                width: 100%;
+                display: block;
+                margin: 0;
+                margin-bottom: 10px;
+                min-height: 40px;
+                background-color: #fff;
+                border-radius: 25px;
+                border: none;
+                padding: 3px 15px;
+            }
+    .MultiCity .Sec .AddPlain {
+        padding: 10px 15px;
+    }
+    .Sec .details .secDetials label {
+        position: relative;
+        top: 7px;
+    }
+                #myTabContent .Sec .details .secDetials i, #myTabContent .Sec .depart i, #myTabContent .Sec .return i, #myTabContent .Sec .Passanger i {
+                    color: #1AAFED;
+                }
+                #myTabContent .Sec .Search {
+        background-color: #000;
+    }
+            .ContentSecAir .Sec {
+                padding: 10px;
+            }
+    .ContentSecAir .DoneView .Sec.InformationDone h6 {
+        color: #1AAFED;
+        font-size: 17px;
+        margin: 0;
+    }
+    .ContentSecAir .DoneView .Sec.InformationDone {
+        padding: 15px 10px;
+    }
+    .ContentSecAir .DoneView .Sec.SecDoneView i {
+        color: #1aafed;
+        font-size: 46px;
+        margin: 7px 0 20px;
+    }
+    .ContentSecAir {
+      padding:  20px 5px;
+    }
+    .Steps {
+        padding: 14px 0;
+        font-size: 12px;
+        background-color: #1aafed;
+        color: #fff;
+        position: relative;
+    }
+        .Steps:before {
+            content: '';
+            width: 70%;
+            top: 33px;
+            background-color: #fff;
+            left: 15%;
+            height: 2px;
+            position: absolute;
+        }
+        .Steps .StepsItem {
+            padding: 0 5px;
+        }
+        .Steps .StepsItem {
+            padding: 19px 5px 0;
+            position: relative;
+            margin-top: 20px;
+        }
+            .Steps .StepsItem:before {
+                content: '';
+                background-color: #1AAFED;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                top: 0;
+                z-index: 999;
+                border: 2px solid #fff;
+                position: absolute;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+            .Steps .StepsItem.activeSteps:before {
+                background-color: #000;
+            }
+            .FooterSec {
+                padding: 5px 0 10px;
+            }
+    .Social ul {
+        margin-top: 3px;
+    }
+    .form-control,
+    .select2 {
+        margin-bottom: 3px;
+        width: 100%;
+        display: block;
+    }
+    .no-padding-res {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .container {
+        padding: 0 5px;
+    }
+    .navbar-fixed-top .navbar-brand img {
+        height: 41px;
+        padding: 0 5px;
+    }
+
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: #000;
+    }
+
+    .navbar-inverse .navbar-toggle {
+        border: none;
+    }
+
+    .dropdown.StyleDropDown.Login {
+        position: relative;
+        top: 46px;
+    }
+
+    .StyleDropDown.Login button {
+        border: 1px solid #000;
+        color: #1aafed;
+    }
+
+    .SectionInformation .Sec .SecImg {
+        margin-bottom: 5px;
+    }
+
+    .SectionInformation .Sec h6 {
+        margin-bottom: 5px;
+    }
+
+    .SectionInformation .Sec {
+        margin-bottom: 10px;
+    }
+
+    .body-content {
+        margin-top: 90px;
+    }
+
+    .SecActionLink .link {
+        padding: 7px 35px 7px;
+        margin: 0 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+        .SecActionLink .link img {
+            width: 20px;
+        }
+
+    .SecActionLink {
+        position: absolute;
+        top: 4px;
+        width: 100%;
+    }
+
+    .HomeTab .nav-item a {
+        background-color: #505050;
+        color: #ababab;
+        border-radius: 25px;
+        padding: 7px 16px;
+        margin: 0 2px;
+        font-size: 12px;
+    }
+
+    .TopFooter a {
+        font-size: 12px;
+        margin: 5px 0px;
+    }
+
+    .CollapseLabel {
+        padding-bottom: 10px;
+        border-bottom: 2px solid #ccc;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .CollpaseFooter .CollapseLabel {
+    border-bottom: 2px solid #1AAFED;
+    color: #1AAFED;
+    }
+    .CollcetCollapse .CollapseLabel {
+        border-color: #fff;
+        color: #fff;
+    }
+    .CollapseLabel i {
+        font-size: 15px;
+    }
+    .NoMobile {
+        display: none !important;
+    }
+    .SecActionLink .link {
+        background-color: #fff;
+        color: #1AAFED;
+    }
+        .SecActionLink .link.linkActive {
+            background-color: #fff;
+            color: #fff;
+        }
+        .SecActionLink .link img.ActiveMobileShow {
+            display: none;
+        }
+        .SecActionLink .link img.NormalMobileShow {
+            display: inline-block;
+        }
+        .SecActionLink .link.linkActive {
+            background-color: #0d5c7d;
+        }
+            .SecActionLink .link.linkActive img.NormalMobileShow {
+                display: none;
+            }
+            .SecActionLink .link.linkActive img.ActiveMobileShow {
+                display: inline-block;
+            }
+    .PhotoSec {
+        background-color: #1aafed;
+    }
+    .LogoVisa img {
+        width: 52px;
+        padding: 5px 0;
+    }
+    .conatinerOption {
+         border-radius: 0px;
+         border-top: 2px solid #ccc;
+         border-bottom: 2px solid #ccc;
+        margin: 0 0 0px;
+    }
+        .conatinerOption button {
+            padding: 0 10px;
+            height: 60px;
+        }
+            .conatinerOption button:last-child {
+                border: none;
+            }
+    .TopBar {
+        padding:20px;
+        color: #fff;
+        background-color: #1aafed;
+    }
+    .TopBar a {
+        color: #fff;
+    }
+        .TopBar a.Filter {
+            border: 1px solid;
+            padding: 4px 10px;
+            border-radius: 20px;
+        }
+    .SecOptionSelect {
+        zoom: 0.7;
+    }
+    .TopBar a i {
+        margin: 0 5px;
+    }
+    .HomeTab .nav-item.active a, .HomeTab .nav-item a:hover, .HomeTab .nav-item a:focus {
+        background-color: #fff !important;
+        color: #1AAFED !important;
+    }
+    .PhotoSec.MinHight {
+        min-height: 140px;
+    }
+    .Prices {
+        border: none;
+    }
+    }

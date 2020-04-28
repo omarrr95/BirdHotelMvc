@@ -1,0 +1,63 @@
+﻿body {
+}
+.Sec .Search {
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+}
+.Sec .details,
+.Sec .depart, .Sec .return,
+.Sec .Passanger,
+.BirdSlider .item {
+    border-right: 1px solid #ccc;
+}
+@media (min-width: 992px) {
+    .pull-right-not-responsive {
+        float: right !important;
+    }
+
+    .pull-left-not-responsive {
+        float: left !important;
+    }
+}
+ul.AirTab li {
+    float: left;
+}
+
+ul.AirTab li {
+    border-right: 1px solid #ccc;
+}
+/*.lSSlideOuter.vertical {
+    padding-left: 100px !important;
+}*/
+.lSSlideOuter .lightSlider {
+    padding-right: 87px !important;
+}
+.Prices {
+    border-left: 1px solid #ccc;
+}
+.TitleHeader {
+    border-left: 4px solid #1AAFED;
+}
+.PriceChoose {
+    border-left: 2px dashed #333;
+}
+@media (min-width: 992px) {
+
+    .width20,
+    .width60 {
+        float: left;
+    }
+}
+@media (max-width: 992px) {
+    .navbar-toggle {
+        float: left !important;
+        margin-left: 15px;
+        margin-right:0  !important;
+    }
+        .dropdown.StyleDropDown.Login {
+        float: right;
+    }
+    .conatinerOption button:last-child {
+        border-right: 2px solid #ccc;
+    }
+}

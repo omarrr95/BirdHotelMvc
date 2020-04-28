@@ -1,0 +1,362 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="PhotoSec">
+    <h1>اكتشف عالمك</h1>
+    <h4>اكتشف قيمة السفر الحقيقة</h4>
+    <img class="ImgBg" src="~/SiteStyle/images/Mask Group 2.png" />
+    <div class="overLay"></div>
+    <div class="SecActionLink">
+        <a href="@Url.Action("Index", "AirPlane")" class="link">
+            <img class="ActiveMobileShow" src="~/SiteStyle/images/airplane.png" />
+            <img class="NormalMobileShow" src="~/SiteStyle/images/airplaneBlue.png" />
+            طيران
+        </a>
+        <a href="@Url.Action("Index", "Hotel")" class="link linkActive">
+            <img class="ActiveMobileShow" src="~/SiteStyle/images/Hotel.png" />
+            <img class="NormalMobileShow" src="~/SiteStyle/images/Icon awesome-hotel.png" />
+            اوتيل
+        </a>
+    </div>
+</div>
+@Html.Partial("_Search")
+
+<div class="container CantriesSec">
+    <div class="title">
+        <img class="Icon" src="~/SiteStyle/images/airplaneBlue.png" />
+        Top Destination
+        <img class="Line" src="~/SiteStyle/images/Line.png" />
+    </div>
+
+    <div class="row margin-0-l-r itemHotel">
+        <div class="col-md-6">
+            <div class="itemSec">
+                <a href="@Url.Action("AirCompany", "Home")">
+                    <img src="~/SiteStyle/images/2.png" />
+
+
+                    <h5><b><i class="fas fa-map-marker-alt"></i> Sharm El Sheikh</b></h5>
+                    <p>Rehana</p>
+                    <div class="overLayImg"></div>
+                </a>
+                <div class="Rating row margin-0-l-r">
+                    <div class="pull-left">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="pull-right">
+                        <h6>01.JUN.-09.JUN.</h6>
+                    </div>
+
+                </div>
+            </div>
+            <div class="BookSec row margin-0-l-r">
+                <div class="pull-left">
+                    <a href="@Url.Action("Info", "Hotel")" class="btn">احجز الآن</a>
+                </div>
+                <div class="pull-right">
+                    <h6>1 NIGHT FROM</h6>
+                    <h4>1,200 EGP</h4>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="itemSec">
+                <a href="@Url.Action("AirCompany", "Home")">
+                    <img src="~/SiteStyle/images/3.png" />
+                    <h5><b>العين السخنه</b></h5>
+                    <p>مكادى</p>
+                    <div class="overLayImg"></div>
+                </a>
+                <div class="Rating row margin-0-l-r">
+                    <div class="pull-left">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="pull-right">
+                        <h6>01.JUN.-09.JUN.</h6>
+                    </div>
+
+                </div>
+            </div>
+            <div class="BookSec row margin-0-l-r">
+                <div class="pull-left">
+                    <a href="@Url.Action("Info", "Hotel")" class="btn">احجز الآن</a>
+                </div>
+                <div class="pull-right">
+                    <h6>1 NIGHT FROM</h6>
+                    <h4>1,200 EGP</h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row margin-0-l-r itemHotel">
+        <div class="col-md-4">
+            <div class="itemSec">
+                <a href="@Url.Action("AirCompany", "Home")">
+                    <img src="~/SiteStyle/images/2.png" />
+
+
+                    <h5><b><i class="fas fa-map-marker-alt"></i> Sharm El Sheikh</b></h5>
+                    <p>Rehana</p>
+                    <div class="overLayImg"></div>
+                </a>
+                <div class="Rating row margin-0-l-r">
+                    <div class="pull-left">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="pull-right">
+                        <h6>01.JUN.-09.JUN.</h6>
+                    </div>
+
+                </div>
+            </div>
+            <div class="BookSec row margin-0-l-r">
+                <div class="pull-left">
+                    <a href="@Url.Action("Info", "Hotel")" class="btn">احجز الآن</a>
+                </div>
+                <div class="pull-right">
+                    <h6>1 NIGHT FROM</h6>
+                    <h4>1,200 EGP</h4>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="itemSec">
+                <a href="@Url.Action("AirCompany", "Home")">
+                    <img src="~/SiteStyle/images/2.png" />
+
+
+                    <h5><b><i class="fas fa-map-marker-alt"></i> Sharm El Sheikh</b></h5>
+                    <p>Rehana</p>
+                    <div class="overLayImg"></div>
+                </a>
+                <div class="Rating row margin-0-l-r">
+                    <div class="pull-left">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="pull-right">
+                        <h6>01.JUN.-09.JUN.</h6>
+                    </div>
+
+                </div>
+            </div>
+            <div class="BookSec row margin-0-l-r">
+                <div class="pull-left">
+                    <a href="@Url.Action("Info", "Hotel")" class="btn">احجز الآن</a>
+                </div>
+                <div class="pull-right">
+                    <h6>1 NIGHT FROM</h6>
+                    <h4>1,200 EGP</h4>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="itemSec">
+                <a href="@Url.Action("AirCompany", "Home")">
+                    <img src="~/SiteStyle/images/3.png" />
+                    <h5><b>العين السخنه</b></h5>
+                    <p>مكادى</p>
+                    <div class="overLayImg"></div>
+                </a>
+                <div class="Rating row margin-0-l-r">
+                    <div class="pull-left">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="pull-right">
+                        <h6>01.JUN.-09.JUN.</h6>
+                    </div>
+
+                </div>
+            </div>
+            <div class="BookSec row margin-0-l-r">
+                <div class="pull-left">
+                    <a href="@Url.Action("Info", "Hotel")" class="btn">احجز الآن</a>
+                </div>
+                <div class="pull-right">
+                    <h6>1 NIGHT FROM</h6>
+                    <h4>1,200 EGP</h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row margin-0-l-r itemHotel">
+        <div class="col-md-6">
+            <div class="itemSec">
+                <a href="@Url.Action("AirCompany", "Home")">
+                    <img src="~/SiteStyle/images/2.png" />
+
+
+                    <h5><b><i class="fas fa-map-marker-alt"></i> Sharm El Sheikh</b></h5>
+                    <p>Rehana</p>
+                    <div class="overLayImg"></div>
+                </a>
+                <div class="Rating row margin-0-l-r">
+                    <div class="pull-left">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="pull-right">
+                        <h6>01.JUN.-09.JUN.</h6>
+                    </div>
+
+                </div>
+            </div>
+            <div class="BookSec row margin-0-l-r">
+                <div class="pull-left">
+                    <a href="@Url.Action("Info", "Hotel")" class="btn">احجز الآن</a>
+                </div>
+                <div class="pull-right">
+                    <h6>1 NIGHT FROM</h6>
+                    <h4>1,200 EGP</h4>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="itemSec">
+                <a href="@Url.Action("AirCompany", "Home")">
+                    <img src="~/SiteStyle/images/3.png" />
+                    <h5><b>العين السخنه</b></h5>
+                    <p>مكادى</p>
+                    <div class="overLayImg"></div>
+                </a>
+                <div class="Rating row margin-0-l-r">
+                    <div class="pull-left">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="pull-right">
+                        <h6>01.JUN.-09.JUN.</h6>
+                    </div>
+
+                </div>
+            </div>
+            <div class="BookSec row margin-0-l-r">
+                <div class="pull-left">
+                    <a href="@Url.Action("Info", "Hotel")" class="btn">احجز الآن</a>
+                </div>
+                <div class="pull-right">
+                    <h6>1 NIGHT FROM</h6>
+                    <h4>1,200 EGP</h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="SectionInformation MobileOnly">
+    <div class="container">
+        <div class="row margin-0-l-r">
+            <div class="col-md-3 Sec">
+                <div class="SecImg">
+                    <img src="~/SiteStyle/images/globe.png" />
+                </div>
+                <h6>Look no further</h6>
+                <p>
+                    Search all online travel deals
+                    in one go
+                </p>
+            </div>
+            <div class="col-md-3 Sec">
+                <div class="SecImg">
+                    <img src="~/SiteStyle/images/IvonFlag.png" />
+                </div>
+                <h6>Shop with confidence</h6>
+                <p>
+                    No hidden fees, taxes or other
+                    nasty surprises
+                </p>
+            </div>
+            <div class="col-md-3 Sec">
+                <div class="SecImg">
+                    <img src="~/SiteStyle/images/Icon awesome-wallet.png" />
+                </div>
+                <h6>Pay the way you want</h6>
+                <p>
+                    See only sellers who support your
+                    preferred methods
+                </p>
+            </div>
+            <div class="col-md-3 Sec">
+                <div class="SecImg">
+                    <img src="~/SiteStyle/images/Icon metro-power.png" />
+                </div>
+                <h6>Instant booking</h6>
+                <p>
+                    For selected sellers, book with
+                    just a couple of clicks
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="title">
+    <img class="Icon" src="~/SiteStyle/images/airplaneBlue.png" />
+    Top Destination
+    <img class="Line" src="~/SiteStyle/images/Line.png" />
+</div>
+<div class="row margin-0-l-r TopFooter">
+    <div class="container">
+
+        <div class="col-md-4">
+            <h6 class="CollapseLabel MobileOnly">Top Country Destinations <i class="fas fa-chevron-down pull-right"></i></h6>
+            <div class="Content">
+                <a href="#">Flights to Saudi Arabia</a>
+                <a href="#">Flights to Kuwait</a>
+                <a href="#">Flights to United Arab Emirates</a>
+                <a href="#">Flights to Qatar</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h6 class="CollapseLabel MobileOnly">Top Airlines <i class="fas fa-chevron-down pull-right"></i></h6>
+            <div class="Content">
+                <a href="#">Flights to Turkey</a>
+                <a href="#">Flights to United States</a>
+                <a href="#">Flights to Morocco</a>
+                <a href="#">Flights to Bahrain</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h6 class="CollapseLabel MobileOnly">Top Hotels <i class="fas fa-chevron-down pull-right"></i></h6>
+            <div class="Content">
+                <a href="#">Flights to Oman</a>
+                <a href="#">Flights to Jordan</a>
+            </div>
+        </div>
+    </div>
+</div>
+

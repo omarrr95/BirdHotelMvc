@@ -1,0 +1,436 @@
+﻿
+@{
+    ViewBag.Title = "AirCompany";
+}
+<script src="~/SiteStyle/plugin/Paggination/jquery.simplePagination.js"></script>
+<div class="PhotoSec PhotoSecAirCompany">
+    <img class="ImgBg" src="~/SiteStyle/images/1234.png" />
+    <div class="overLay"></div>
+
+    <div class="ImgAirport">
+        <img src="~/SiteStyle/images/EgyptAir.png" />
+    </div>
+    <div class="content">
+        <p>
+            Book EGYPTAIR Airlines at cheaper
+            rates with us .
+        </p>
+        <h5>More than +102 destinations Around the world .</h5>
+    </div>
+</div>
+@Html.Partial("_Search")
+
+<div class="row margin-0-l-r ContentSecAir">
+    <div class="container">
+        <div class="col-md-9">
+            <div class="Sec">
+                <div class="title titleStart">
+                    <div class="titleStartLabel">
+                        <img class="Icon" src="~/SiteStyle/images/airplaneBlue.png" />
+                        Top Destination
+                    </div>
+                </div>
+
+                <div class="itemTrip row margin-0-l-r">
+                    <div class="col-xs-4">
+                        <p>Kuwait<span>(Kwi)</span></p>
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="/SiteStyle/images/Icon.png">
+                    </div>
+                    <div class="col-xs-4">
+                        <p>Kuwait<span>(Kwi)</span></p>
+                    </div>
+                    <div class="col-xs-2">
+                        <button class="btn">احجز الآن</button>
+                    </div>
+                </div>
+                <div class="itemTrip row margin-0-l-r">
+                    <div class="col-xs-4">
+                        <p>Kuwait<span>(Kwi)</span></p>
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="/SiteStyle/images/Icon.png">
+                    </div>
+                    <div class="col-xs-4">
+                        <p>Kuwait<span>(Kwi)</span></p>
+                    </div>
+                    <div class="col-xs-2">
+                        <button class="btn">احجز الآن</button>
+                    </div>
+                </div>
+                <div class="itemTrip row margin-0-l-r">
+                    <div class="col-xs-4">
+                        <p>Kuwait<span>(Kwi)</span></p>
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="/SiteStyle/images/Icon.png">
+                    </div>
+                    <div class="col-xs-4">
+                        <p>Kuwait<span>(Kwi)</span></p>
+                    </div>
+                    <div class="col-xs-2">
+                        <button class="btn">احجز الآن</button>
+                    </div>
+                </div>
+                <div class="itemTrip row margin-0-l-r">
+                    <div class="col-xs-4">
+                        <p>Kuwait<span>(Kwi)</span></p>
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="/SiteStyle/images/Icon.png">
+                    </div>
+                    <div class="col-xs-4">
+                        <p>Kuwait<span>(Kwi)</span></p>
+                    </div>
+                    <div class="col-xs-2">
+                        <button class="btn">احجز الآن</button>
+                    </div>
+                </div>
+                <div class="itemTrip row margin-0-l-r">
+                    <div class="col-xs-4">
+                        <p>Kuwait<span>(Kwi)</span></p>
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="/SiteStyle/images/Icon.png">
+                    </div>
+                    <div class="col-xs-4">
+                        <p>Kuwait<span>(Kwi)</span></p>
+                    </div>
+                    <div class="col-xs-2">
+                        <button class="btn">احجز الآن</button>
+                    </div>
+                </div>
+                <div class="itemTrip row margin-0-l-r">
+                    <div class="col-xs-4">
+                        <p>Kuwait<span>(Kwi)</span></p>
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="/SiteStyle/images/Icon.png">
+                    </div>
+                    <div class="col-xs-4">
+                        <p>Kuwait<span>(Kwi)</span></p>
+                    </div>
+                    <div class="col-xs-2">
+                        <button class="btn">احجز الآن</button>
+                    </div>
+                </div>
+                <div class="itemTrip row margin-0-l-r">
+                    <div class="col-xs-4">
+                        <p>Kuwait<span>(Kwi)</span></p>
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="/SiteStyle/images/Icon.png">
+                    </div>
+                    <div class="col-xs-4">
+                        <p>Kuwait<span>(Kwi)</span></p>
+                    </div>
+                    <div class="col-xs-2">
+                        <button class="btn">احجز الآن</button>
+                    </div>
+                </div>
+                <div class="itemTrip row margin-0-l-r">
+                    <div class="col-xs-4">
+                        <p>Kuwait<span>(Kwi)</span></p>
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="/SiteStyle/images/Icon.png">
+                    </div>
+                    <div class="col-xs-4">
+                        <p>Cairo<span>(Egy)</span></p>
+                    </div>
+                    <div class="col-xs-2">
+                        <button class="btn">احجز الآن</button>
+                    </div>
+                </div>
+
+                <div id="pagination-container"></div>
+            </div>
+            <div class="Sec">
+                <div class="title titleStart">
+                    <div class="titleStartLabel">
+                        <img class="Icon" src="~/SiteStyle/images/airplaneBlue.png" />
+                        About<span> EGYPTAIR</span>
+                    </div>
+                </div>
+                <ul class="nav  nav-pills nav-fill AirTab" id="myTabDetials" role="tablist">
+                    <li class="nav-item active">
+                        <a class="nav-link nav-item" id="home-tabDetials" data-toggle="tab" href="#homeDetials" role="tab" aria-controls="homeDetials" aria-selected="true">Sammary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-item" id="profile-tabDetials" data-toggle="tab" href="#profileDetials" role="tab" aria-controls="profileDetials" aria-selected="false">General Information</a>
+                    </li>
+
+                </ul>
+                <div class="tab-content" id="myTabContent2">
+                    <div class="tab-pane fade active in" id="homeDetials" role="tabpanel" aria-labelledby="home-tabDetials">
+                        <p>
+                            egyptair is an Egyptian national airline. Dating back to 1932, it was the first airline founded in the Middle East and the seventh airline all over
+                            the world. Egypt Air is a member of the International Air Transport Association (IATA), the International Civil Aviation Organization (ICAO) and
+                            the Arab Air Carriers' Organization (AACO). It is headquartered in Cairo and it takes Cairo International Airport as its main hub and Burj Al Arab
+                            International, Sharm El Sheikh International, Luxor International Airport, Assiut International Airport, and Sohag International Airport as
+                            secondary operational sites for its operations.
+                        </p>
+
+                    </div>
+                    <div class="tab-pane fade " id="profileDetials" role="tabpanel" aria-labelledby="profile-tabDetials">
+                        <p>
+                            egyptair is an Egyptian national airline. Dating back to 1932, it was the first airline founded in the Middle East and the seventh airline all over
+                            the world. Egypt Air is a member of the International Air Transport Association (IATA), the International Civil Aviation Organization (ICAO) and
+                            the Arab Air Carriers' Organization (AACO). It is headquartered in Cairo and it takes Cairo International Airport as its main hub and Burj Al Arab
+                            International, Sharm El Sheikh International, Luxor International Airport, Assiut International Airport, and Sohag International Airport as
+                            secondary operational sites for its operations.
+                            egyptair is an Egyptian national airline. Dating back to 1932, it was the first airline founded in the Middle East and the seventh airline all over
+                            the world. Egypt Air is a member of the International Air Transport Association (IATA), the International Civil Aviation Organization (ICAO) and
+                            the Arab Air Carriers' Organization (AACO). It is headquartered in Cairo and it takes Cairo International Airport as its main hub and Burj Al Arab
+                            International, Sharm El Sheikh International, Luxor International Airport, Assiut International Airport, and Sohag International Airport as
+                            secondary operational sites for its operations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="Sec">
+                <div class="title titleStart">
+                    <div class="titleStartLabel">
+                        <img class="Icon" src="~/SiteStyle/images/airplaneBlue.png" />
+                        Highlights<span> EGYPTAIR</span>
+                    </div>
+                </div>
+                <ul class="nav  nav-pills nav-fill AirTab" id="myTabHilight" role="tablist">
+                    <li class="nav-item active">
+                        <a class="nav-link nav-item" id="HilightDetials1" data-toggle="tab" href="#HilightDetials_1" role="tab" aria-controls="homeDetials" aria-selected="true">FLIGHT CLASSES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-item" id="HilightDetials2" data-toggle="tab" href="#HilightDetials_2" role="tab" aria-controls="profileDetials" aria-selected="false">FLEETS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-item" id="HilightDetials3" data-toggle="tab" href="#HilightDetials_3" role="tab" aria-controls="profileDetials" aria-selected="false">BAGGAGE POLICY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-item" id="HilightDetials4" data-toggle="tab" href="#HilightDetials_4" role="tab" aria-controls="profileDetials" aria-selected="false">OTHER POLICIES</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent3">
+                    <div class="tab-pane fade active in" id="HilightDetials_1" role="tabpanel" aria-labelledby="home-tabDetials">
+                        <p>
+                            OTHER POLICIES
+                            Booking procedures and issuance of boarding pass:
+                            Passengers can easily complete their booking procedures online.
+                            Passengers can also issue boarding pass over the Internet within a period ranging from 48 hours and up to 90 minutes before the time of
+                            departure.
+                            In the case they wish to complete their travel procedures at the airport, passengers should come to the airport 3 hours before the time of
+                            departure.
+                        </p>
+
+                    </div>
+                    <div class="tab-pane fade " id="HilightDetials_2" role="tabpanel" aria-labelledby="profile-tabDetials">
+                        <p>
+                            egyptair is an Egyptian national airline. Dating back to 1932, it was the first airline founded in the Middle East and the seventh airline all over
+                            the world. Egypt Air is a member of the International Air Transport Association (IATA), the International Civil Aviation Organization (ICAO) and
+                            the Arab Air Carriers' Organization (AACO). It is headquartered in Cairo and it takes Cairo International Airport as its main hub and Burj Al Arab
+                            International, Sharm El Sheikh International, Luxor International Airport, Assiut International Airport, and Sohag International Airport as
+                            secondary operational sites for its operations.
+                            egyptair is an Egyptian national airline. Dating back to 1932, it was the first airline founded in the Middle East and the seventh airline all over
+                            the world. Egypt Air is a member of the International Air Transport Association (IATA), the International Civil Aviation Organization (ICAO) and
+                            the Arab Air Carriers' Organization (AACO). It is headquartered in Cairo and it takes Cairo International Airport as its main hub and Burj Al Arab
+                            International, Sharm El Sheikh International, Luxor International Airport, Assiut International Airport, and Sohag International Airport as
+                            secondary operational sites for its operations.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade " id="HilightDetials_3" role="tabpanel" aria-labelledby="profile-tabDetials">
+                        <p>
+                            egyptair is an Egyptian national airline. Dating back to 1932, it was the first airline founded in the Middle East and the seventh airline all over
+                            the world. Egypt Air is a member of the International Air Transport Association (IATA), the International Civil Aviation Organization (ICAO) and
+                            ional, Luxor International Airport, Assiut International Airport, and Sohag International Airport as
+                            secondary operational sites for its operations.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade " id="HilightDetials_4" role="tabpanel" aria-labelledby="profile-tabDetials">
+                        <p>
+                            egyptair is an Egyptian national airline. Dating back to 1932, it was the first airline founded in the Middle East and the seventh airline all over
+                            the world. Egypt Air is a member of the International Air Transport Association (IATA), the International Civil Aviation Organization (ICAO) and
+                            the Arab Air Carriers' Organization (AACO). It is headquartered in Cairo and it takes Cairo International Airport as its main hub and Burj Al Arab
+                            International, Sharm El Sheikh International, Luxor International Airport, Assiut International Airport, and Sohag International Airport as
+                            r International Airport, Assiut International Airport, and Sohag International Airport as
+                            secondary operational sites for its operations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-3">
+
+            <div class="Sec ImgCompany">
+                <img src="~/SiteStyle/images/Image 3.png" />
+            </div>
+            <div class="Sec LowPadding">
+                <div class="title titleStart">
+                    <div class="titleBlockLabel">
+                        <img class="Icon" src="~/SiteStyle/images/airplaneBlue.png" />
+                        Popular Airlines
+                    </div>
+                </div>
+                <div class="containerAirlines">
+                    <div class="LineAir">
+                        <img src="~/SiteStyle/images/iconAir.png" />
+                        Saudi Arabian Airlines
+                    </div>
+                    <div class="LineAir">
+                        <img src="~/SiteStyle/images/iconAir.png" />
+                        Nesma Airlines
+                    </div>
+                    <div class="LineAir">
+                        <img src="~/SiteStyle/images/iconAir.png" />
+                        Turkish Airlines
+                    </div>
+                    <div class="LineAir">
+                        <img src="~/SiteStyle/images/iconAir.png" />
+                        Emirates Airlines
+                    </div>
+                    <div class="LineAir">
+                        <img src="~/SiteStyle/images/iconAir.png" />
+                        Lufthansa
+                    </div>
+                    <div class="LineAir">
+                        <img src="~/SiteStyle/images/iconAir.png" />
+                        Gulf Air
+                    </div>
+                    <div class="LineAir">
+                        <img src="~/SiteStyle/images/iconAir.png" />
+                        Fly AlMasria
+                    </div>
+                    <div class="LineAir">
+                        <img src="~/SiteStyle/images/iconAir.png" />
+                        Saudi Arabian Airlines
+                    </div>
+                    <div class="LineAir">
+                        <img src="~/SiteStyle/images/iconAir.png" />
+                        Nesma Airlines
+                    </div>
+                    <div class="LineAir">
+                        <img src="~/SiteStyle/images/iconAir.png" />
+                        Turkish Airlines
+                    </div>
+                    <div class="LineAir">
+                        <img src="~/SiteStyle/images/iconAir.png" />
+                        Emirates Airlines
+                    </div>
+                    <div class="LineAir">
+                        <img src="~/SiteStyle/images/iconAir.png" />
+                        Lufthansa
+                    </div>
+                    <div class="LineAir">
+                        <img src="~/SiteStyle/images/iconAir.png" />
+                        Gulf Air
+                    </div>
+                    <div class="LineAir">
+                        <img src="~/SiteStyle/images/iconAir.png" />
+                        Fly AlMasria
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button onclick="SeeMore()" class="SeeMore BtnSee">See More</button>
+                    <button onclick="SeeLess()" class="SeeLess BtnSee">See Less</button>
+                </div>
+            </div>
+            <div class="SecAd">
+                <div class="row margin-0-l-r ColorGreen">
+                    <div class="pull-left">website.com</div>
+                    <div class="pull-right"><span>Ad</span></div>
+                </div>
+                <h4>Ecperiance the nile - cafelluca</h4>
+                <h5>Private 2 Hours Vruise in the Nile of the Pharaoh with dinner and drinks . morning</h5>
+                <a href="#">Visit Site</a>
+            </div>
+            <div class="SecAd">
+                <div class="row margin-0-l-r ColorGreen">
+                    <div class="pull-left">website.com</div>
+                    <div class="pull-right"><span>Ad</span></div>
+                </div>
+                <h4>Ecperiance the nile - cafelluca</h4>
+                <h5>Private 2 Hours Vruise in the Nile of the Pharaoh with dinner and drinks . morning</h5>
+                <a href="#">Visit Site</a>
+            </div>
+            <div class="SecAd">
+                <div class="row margin-0-l-r ColorGreen">
+                    <div class="pull-left">website.com</div>
+                    <div class="pull-right"><span>Ad</span></div>
+                </div>
+                <h4>Ecperiance the nile - cafelluca</h4>
+                <h5>Private 2 Hours Vruise in the Nile of the Pharaoh with dinner and drinks . morning</h5>
+                <a href="#">Visit Site</a>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="Sec">
+                <div class="title">
+                    <div class="">
+                        <img class="Icon" src="~/SiteStyle/images/airplaneBlue.png" />
+                        Top Country Destinations
+                        <img class="Line" src="~/SiteStyle/images/Line.png" />
+                    </div>
+                </div>
+                <div class="row margin-0-l-r TopFooter">
+                    <div class="col-md-4">
+                        <a href="#">Flights to Saudi Arabia</a>
+                        <a href="#">Flights to Kuwait</a>
+                        <a href="#">Flights to United Arab Emirates</a>
+                        <a href="#">Flights to Qatar</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#">Flights to Turkey</a>
+                        <a href="#">Flights to United States</a>
+                        <a href="#">Flights to Morocco</a>
+                        <a href="#">Flights to Bahrain</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#">Flights to Oman</a>
+                        <a href="#">Flights to Jordan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var items = $(".ContentSecAir .Sec .itemTrip");
+    var numItems = items.length;
+    var perPage = 4;
+
+    items.slice(perPage).hide();
+
+    $('#pagination-container').pagination({
+        items: numItems,
+        itemsOnPage: perPage,
+        prevText: "&laquo;",
+        nextText: "&raquo;",
+        onPageClick: function (pageNumber) {
+            var showFrom = perPage * (pageNumber - 1);
+            var showTo = showFrom + perPage;
+            items.hide().slice(showFrom, showTo).show();
+        }
+    });
+
+    function SeeMore() {
+        $(".SeeLess").show();
+        $(".SeeMore").hide();
+        $(".containerAirlines").addClass("autoHight");
+    }
+    function SeeLess() {
+        $(".SeeLess").hide();
+        $(".SeeMore").show();
+        $(".containerAirlines").removeClass("autoHight");
+    }
+    $(document).ready(function () {
+        if ($(window).width() > 991) {
+            $(".HomeTabContainer").addClass("AirCompanyTabContainer");
+
+        }
+    });
+     
+</script>
+

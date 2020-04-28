@@ -1,0 +1,187 @@
+﻿
+<div class="HomeTabContainer">
+    <div class="container">
+
+        <div id="myTabContent">
+                <form class="RoundWay">
+                    <div class="row margin-0-l-r Sec">
+                        <div class="details">
+                            <div class="secDetials">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="inlineblock">
+                                    <label>KWI</label>
+                                    <p><input class="" placeholder="مطار الوصول" /></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="depart">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                <input id="" type="date" class="form-control" name="msg" placeholder="depart">
+                            </div>
+                        </div>
+                        <div class="return">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                <input id="" type="date" class="form-control" name="msg" placeholder="return">
+                            </div>
+                        </div>
+                        <div class="Passanger dropdown">
+
+                            <i class="far fa-user"></i>
+                            <div class="Information" data-toggle="dropdown">
+                                <p><input class="PersonCount" value="1" type="number" /> Passenger</p>
+                            </div>
+                            <div class="Personal ViewCount dropdown-menu">
+                                <div class="row margin-0-l-r margrinbtn10">
+                                    <label>Hotel stars</label>
+                                    <select class="form-control select2">
+                                        <option>5 Star</option>
+                                        <option>4 Star</option>
+                                        <option>3 Star</option>
+                                        <option>2 Star</option>
+                                        <option>1 Star</option>
+                                    </select>
+                                </div>
+                                <div class="row margin-0-l-r margrinbtn10">
+                                    <div class="col-xs-6">بالغين</div>
+                                    <div class="col-xs-6">
+                                        <div class="Quantity AdultQuant">
+                                            <button class="min" type="button">-</button>
+                                            <p class="PersonCount">1</p>
+                                            <button class="max" type="button">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row margin-0-l-r margrinbtn10">
+                                    <div class="col-xs-6">اطفال فوق 12 سنه</div>
+                                    <div class="col-xs-6">
+                                        <div class="Quantity ChildrenQuant">
+                                            <button class="min" type="button">-</button>
+                                            <p class="PersonCount">0</p>
+                                            <button class="max" type="button">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row margin-0-l-r margrinbtn10">
+                                    <div class="col-xs-6">اطفال تحت 12 سنه</div>
+                                    <div class="col-xs-6">
+                                        <div class="Quantity KidsQuant">
+                                            <button class="min" type="button">-</button>
+                                            <p class="PersonCount">0</p>
+                                            <button class="max" type="button">+</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Search">
+                            <button class="btn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script>
+
+    $(".RoundWay .AdultQuant .min").click(function () {
+        debugger;
+        var AdultQuant = $(".RoundWay .AdultQuant p").html();
+        AdultQuant = parseInt(AdultQuant);
+        if (AdultQuant <= 1) {
+            return;
+        }
+        else {
+            AdultQuant--;
+
+        }
+
+        $(".RoundWay .AdultQuant p").html(AdultQuant);
+        var kids = $(".RoundWay .KidsQuant p").html();
+        var child = $(".RoundWay .ChildrenQuant p").html();
+        kids = parseInt(kids);
+        child = parseInt(child);
+        $(".RoundWay input.PersonCount").val(AdultQuant + kids + child);
+
+    })
+    $(".RoundWay .AdultQuant .max").click(function () {
+        var AdultQuant = $(".RoundWay .AdultQuant p").html();
+        AdultQuant = parseInt(AdultQuant);
+        AdultQuant++;
+        $(".RoundWay .AdultQuant p").html(AdultQuant);
+        var kids = $(".RoundWay .KidsQuant p").html();
+        var child = $(".RoundWay .ChildrenQuant p").html();
+        kids = parseInt(kids);
+        child = parseInt(child);
+        $(".RoundWay input.PersonCount").val(AdultQuant + kids + child);
+
+    })
+
+    $(".RoundWay .KidsQuant .min").click(function () {
+        debugger;
+        var KidsQuant = $(".RoundWay .KidsQuant p").html();
+        KidsQuant = parseInt(KidsQuant);
+        if (KidsQuant <= 0) {
+            return;
+        }
+        else {
+            KidsQuant--;
+
+        }
+        $(".RoundWay .KidsQuant p").html(KidsQuant);
+        var Adult = $(".RoundWay .AdultQuant p").html();
+        var child = $(".RoundWay .ChildrenQuant p").html();
+        Adult = parseInt(Adult);
+        child = parseInt(child);
+        $(".RoundWay input.PersonCount").val(Adult + KidsQuant + child);
+
+    })
+    $(".RoundWay .KidsQuant .max").click(function () {
+        debugger
+        var KidsQuant = $(".RoundWay .KidsQuant p").html();
+        KidsQuant = parseInt(KidsQuant);
+        KidsQuant++;
+        $(".RoundWay .KidsQuant p").html(KidsQuant);
+        var Adult = $(".RoundWay .AdultQuant p").html();
+        var child = $(".RoundWay .ChildrenQuant p").html();
+        Adult = parseInt(Adult);
+        child = parseInt(child);
+        $(".RoundWay input.PersonCount").val(Adult + KidsQuant + child);
+    })
+
+    $(".RoundWay .ChildrenQuant .min").click(function () {
+        debugger;
+        var ChildrenQuant = $(".RoundWay .ChildrenQuant p").html();
+        ChildrenQuant = parseInt(ChildrenQuant);
+        if (ChildrenQuant <= 0) {
+            return;
+        }
+        else {
+            ChildrenQuant--;
+
+        }
+        $(".RoundWay .ChildrenQuant p").html(ChildrenQuant);
+        var Adult = $(".RoundWay .AdultQuant p").html();
+        var kids = $(".RoundWay .KidsQuant p").html();
+        Adult = parseInt(Adult);
+        kids = parseInt(kids);
+        $(".RoundWay input.PersonCount").val(Adult + kids + ChildrenQuant);
+
+    })
+    $(".RoundWay .ChildrenQuant .max").click(function () {
+        var ChildrenQuant = $(".RoundWay .ChildrenQuant p").html();
+        ChildrenQuant = parseInt(ChildrenQuant);
+        ChildrenQuant++;
+        $(".RoundWay .ChildrenQuant p").html(ChildrenQuant);
+        var Adult = $(".RoundWay .AdultQuant p").html();
+        var kids = $(".RoundWay .KidsQuant p").html();
+        Adult = parseInt(Adult);
+        kids = parseInt(kids);
+        $(".RoundWay input.PersonCount").val(Adult + kids + ChildrenQuant);
+
+    })
+
+</script>

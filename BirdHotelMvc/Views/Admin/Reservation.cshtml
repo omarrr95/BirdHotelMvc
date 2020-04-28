@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "Reservation";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+}
+
+    <div class="container">
+        <div class="SecTable">
+            <div class="row margin-0-l-r SecHeader">
+                <div class="pull-left">معلومات عن الشركة</div>
+
+            </div>
+            <div class="row margin-0-l-r">
+                <div class="col-md-6 form-group">
+                    <label class="control-label col-md-3 padding-5-l-r">اسم الشركة</label>
+                    <div class="col-md-7 padding-5-l-r">
+                        <input type="text" class="form-control" placeholder="اسم الشركة" />
+                    </div>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label class="control-label col-md-3 padding-5-l-r">اسم الشركة</label>
+                    <div class="col-md-7 padding-5-l-r">
+                        <input type="text" class="form-control" placeholder="اسم الشركة" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="SecTable">
+            <div class="row margin-0-l-r SecHeader">
+                <div class="pull-left">الخطوط</div>
+
+            </div>
+            <div class="row margin-0-l-r RepeatContaner">
+                <div class="row margin-0-l-r">
+                    <div class="col-md-9 form-group">
+                        <label class="control-label col-md-2 padding-5-l-r">Api url</label>
+                        <div class="col-md-8 padding-5-l-r">
+                            <input type="text" class="form-control" placeholder="انسخ الرابط" />
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row margin-0-l-r SecRepet">
+                        <h4>Destination 1</h4>
+                        <div class="col-md-6 form-group">
+                            <label class="control-label col-md-3 padding-5-l-r">مدينة المغادرة</label>
+                            <div class="col-md-7 padding-5-l-r">
+                                <input type="text" class="form-control" placeholder="مدينة المغادرة" />
+                            </div>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="control-label col-md-3 padding-5-l-r">مدينة الوصول</label>
+                            <div class="col-md-7 padding-5-l-r">
+                                <input type="text" class="form-control" placeholder="مدينة الوصول" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <a class="AdDes"><i class="fas fa-plus"></i> Add destination</a>
+            </div>
+
+<script>
+    $(document).on('click', '.AdDes', function () {
+
+        $(".RepeatContaner").append(`<div class="row margin-0-l-r SecRepet">
+                    <h4>Destination 2</h4>
+                    <div class="col-md-6 form-group">
+                        <label class="control-label col-md-3 padding-5-l-r">مدينة المغادرة</label>
+                        <div class="col-md-7 padding-5-l-r">
+                            <input type="text" class="form-control" placeholder="مدينة المغادرة" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label class="control-label col-md-3 padding-5-l-r">مدينة الوصول</label>
+                        <div class="col-md-7 padding-5-l-r">
+                            <input type="text" class="form-control" placeholder="مدينة الوصول" />
+                        </div>
+                    </div>
+
+                </div>`)
+    });
+</script>

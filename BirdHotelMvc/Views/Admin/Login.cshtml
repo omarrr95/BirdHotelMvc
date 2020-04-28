@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_AdminLogin.cshtml";
+}
+
+    <div class="LoginForm">
+        <div class="FormSec">
+            <img class="TopMask" src="~/SiteStyle/images/Mask-Group-1.png" />
+
+            <form class="text-center">
+                <img src="~/SiteStyle/images/Logo-1.png" />
+                <div class="SecInput">
+                    <i class="far fa-user"></i>
+                    <input class="form-control" type="text" placeholder="UserName" />
+                </div>
+                <div class="SecInput">
+                    <i class="fas fa-lock"></i>
+                    <input class="form-control" type="password" placeholder="Password" />
+                </div>
+
+                <button class="LoginBtn">Login</button>
+            </form>
+        </div>
+        <div class="imgSec">
+            <img src="~/SiteStyle/images/Flights.png" />
+            <div class="overLayBlueLogin"></div>
+        </div>
+
+    </div>
+
+<script>
+    $(document).ready(function () {
+        $(".imgSec").height($(window).height() - 40);
+        $(".FormSec").height($(window).height() - 40);
+    });
+</script>

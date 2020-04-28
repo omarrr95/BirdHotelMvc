@@ -1,0 +1,123 @@
+﻿body {
+    direction: rtl;
+}
+.Sec .Search {
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+}
+.Sec .details,
+.Sec .depart, .Sec .return,
+.Sec .Passanger,
+.BirdSlider .item {
+    border-left: 1px solid #ccc;
+}
+div.dataTables_wrapper div.dataTables_filter,
+div.dataTables_wrapper div.dataTables_paginate {
+    text-align: left;
+}
+    div.dataTables_wrapper div.dataTables_filter input {
+        margin-left: 0 !important;
+        margin-right: 7px;
+    }
+    @media (min-width: 992px) {
+        .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+        float: right;
+    }.col-md-offset-2 {
+        margin-right: 16.66666667%;
+    }
+     .col-md-offset-1 {
+        margin-right: 8.33333333%;
+    }
+}
+.pull-right {
+    float: left !important;
+}
+.pull-left {
+    float: right !important;
+}
+@media (min-width: 992px) {
+    .pull-right-not-responsive {
+        float: left !important;
+    }
+
+    .pull-left-not-responsive {
+        float: right !important;
+    }
+}
+    .text-left {
+        text-align: right;
+    }
+
+    .text-right {
+        text-align: left;
+    }
+
+    .dirLtr {
+        direction: ltr;
+    }
+
+    ul.AirTab li {
+        float: right
+    }
+
+    ul.AirTab li {
+        border-left: 1px solid #ccc;
+    }
+
+    .title img.Icon {
+        transform: rotate(270deg);
+    }
+
+    .Sec .containerAirlines .LineAir img {
+        transform: rotate(180deg);
+    }
+
+    .lSSlideOuter.vertical .lSAction > a {
+        right: 50%;
+    }
+
+    .Prices {
+        border-right: 1px solid #ccc;
+    }
+    /*.lSSlideOuter.vertical {
+    padding-right: 100px !important;
+}*/
+    .lSSlideWrapper .lSSlide {
+        padding-right: 87px !important;
+    }
+
+    .ContentSecAir .DoneView .Sec.PlaneSec .col-xs-4 img {
+        transform: rotate(180deg);
+    }
+
+    .TitleHeader {
+        border-right: 4px solid #1AAFED;
+    }
+
+    .PriceChoose {
+        border-right: 2px dashed #333;
+    }
+
+    .navbar-brand {
+        float: right;
+    }
+
+    @media (min-width: 992px) {
+
+        .width20,
+        .width60 {
+            float: right;
+        }
+    }
+
+@media (max-width: 992px) {
+    .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+        float: right !important;
+    }
+    .dropdown.StyleDropDown.Login {
+        float: left;
+    }
+    .conatinerOption button:last-child {
+        border-left: 2px solid #ccc;
+    }
+}

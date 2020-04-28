@@ -1,0 +1,606 @@
+﻿
+@{
+    ViewBag.Title = "CheckOut";
+}
+<style>
+    .form-group {
+        margin-bottom: 25px;
+    }
+
+    .form-control,
+    .select2-container--default .select2-selection--single {
+        border-color: #1AAFED;
+    }
+
+    @@media (max-width: 992px) {
+
+        .SecCheckOutResNo {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .SecCheckOut {
+            margin-bottom: 0px;
+        }
+    }
+</style>
+
+<div class="row margin-0-l-r Steps MobileOnly">
+    <div class="col-xs-4 text-center StepsItem Steps1">Review Flight</div>
+    <div class="col-xs-4 text-center StepsItem Steps2">Traveller Details</div>
+    <div class="col-xs-4 text-center StepsItem Steps3">Payment</div>
+</div>
+    <div class="row margin-0-l-r">
+        <div class="container">
+            <div class="row margin-0-l-r">
+                <div class="ContentSecAir">
+                    <div class="col-md-3 pull-right-not-responsive Step1">
+
+                        <div class="Sec Summary">
+                            <div class="HeaderCheckOut marginbot0">
+                                Summary
+                            </div>
+
+                            <div class="row margin-0-l-r rowDetails">
+                                <h5>
+                                    <span class="bluecolor">Cairo (CAI)</span>
+                                    to
+                                    <span class="bluecolor">Kuwait (KWI)</span>
+
+                                </h5>
+                                <h5>Thu,5 Mar-Sat,21 Mar</h5>
+                            </div>
+                            <div class="row margin-0-l-r rowDetails">
+                                <h6 class="bluecolor">PRICE BREAKDOWN:</h6>
+
+                                <div class="row margin-0-l-r">
+                                    <div class="pull-left">
+                                        <h6>Adult Fare</h6>
+                                        <h6 class="text-gray">2x 2,500EGP</h6>
+                                    </div>
+                                    <div class="pull-right">
+                                        <h6>EGP2,500</h6>
+                                    </div>
+                                </div>
+                                <div class="row margin-0-l-r">
+                                    <div class="pull-left">Tax</div>
+                                    <div class="pull-right">EGP 175</div>
+                                </div>
+                            </div>
+                            <div class="row margin-0-l-r rowDetails">
+
+                                <div class="row margin-0-l-r">
+                                    <div class="pull-left">
+                                        <h6>Total</h6>
+                                    </div>
+                                    <div class="pull-right">
+
+                                        <h6>EGP 5,175</h6>
+                                        <h6 class="text-gray">Hotel bird - EGP 500</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="footerCheckOut margintop0">
+                                875 EGP
+                            </div>
+                        </div>
+
+                        <div class="Sec ImgCompany NoMobile">
+                            <img src="~/SiteStyle/images/Image 3.png" />
+                        </div>
+
+                        <div class="SecAd NoMobile">
+                            <div class="row margin-0-l-r ColorGreen">
+                                <div class="pull-left">website.com</div>
+                                <div class="pull-right"><span>Ad</span></div>
+                            </div>
+                            <h4>Ecperiance the nile - cafelluca</h4>
+                            <h5>Private 2 Hours Vruise in the Nile of the Pharaoh with dinner and drinks . morning</h5>
+                            <a href="#">Visit Site</a>
+                        </div>
+                        <div class="SecAd NoMobile">
+                            <div class="row margin-0-l-r ColorGreen">
+                                <div class="pull-left">website.com</div>
+                                <div class="pull-right"><span>Ad</span></div>
+                            </div>
+                            <h4>Ecperiance the nile - cafelluca</h4>
+                            <h5>Private 2 Hours Vruise in the Nile of the Pharaoh with dinner and drinks . morning</h5>
+                            <a href="#">Visit Site</a>
+                        </div>
+                        <div class="SecAd NoMobile">
+                            <div class="row margin-0-l-r ColorGreen">
+                                <div class="pull-left">website.com</div>
+                                <div class="pull-right"><span>Ad</span></div>
+                            </div>
+                            <h4>Ecperiance the nile - cafelluca</h4>
+                            <h5>Private 2 Hours Vruise in the Nile of the Pharaoh with dinner and drinks . morning</h5>
+                            <a href="#">Visit Site</a>
+                        </div>
+                    </div>
+                    <div class="col-md-9 pull-right-not-responsive">
+                        <div class="row margin-0-l-r bold NoMobile">
+                            <div> Review Your Itinerary</div>
+                            <div> All times shown are local</div>
+                        </div>
+                        <div class="SecCheckOut SecCheckOutResNo row margin-0-l-r Step1">
+                            <div class="col-md-6 no-padding-res">
+                                <div class="Sec PlaneSec">
+                                    <h4 class="padding-5-l-r">DEPART</h4>
+                                    <div class="row margin-0-l-r margrinbtn10">
+                                        <div class="col-xs-4">Thu 5 Mar</div>
+                                        <div class="col-xs-4"></div>
+                                        <div class="col-xs-4">Thu 5 Mar</div>
+                                    </div>
+                                    <div class="row margin-0-l-r margrinbtn10 bold">
+
+                                        <div class="col-xs-4 ">CAI 15:05</div>
+                                        <div class="col-xs-4 text-center">
+                                            <img src="~/SiteStyle/images/iconAirBlue.png" />
+                                        </div>
+                                        <div class="col-xs-4">KWI 18:30</div>
+                                    </div>
+                                    <div class="row margin-0-l-r margrinbtn10">
+                                        <div class="col-xs-4">Cairo Airport</div>
+                                        <div class="col-xs-4"></div>
+                                        <div class="col-xs-4">Kuwait Airport</div>
+                                    </div>
+                                    <div class="row margin-0-l-r margrinbtn10">
+                                        <div class="col-xs-4">02h 25m</div>
+                                        <div class="col-xs-4"></div>
+                                        <div class="col-xs-4"><a href="#">Egyptain</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 no-padding-res">
+                                <div class="Sec PlaneSec">
+                                    <h4 class="padding-5-l-r">
+                                        RETURN
+                                    </h4>
+                                    <div class="row margin-0-l-r margrinbtn10">
+                                        <div class="col-xs-4">Thu 5 Mar</div>
+                                        <div class="col-xs-4"></div>
+                                        <div class="col-xs-4">Thu 5 Mar</div>
+                                    </div>
+                                    <div class="row margin-0-l-r margrinbtn10 bold">
+
+                                        <div class="col-xs-4 ">CAI 15:05</div>
+                                        <div class="col-xs-4 text-center">
+                                            <img src="~/SiteStyle/images/iconAirBlue.png" />
+                                        </div>
+                                        <div class="col-xs-4">KWI 18:30</div>
+                                    </div>
+                                    <div class="row margin-0-l-r margrinbtn10">
+                                        <div class="col-xs-4">Cairo Airport</div>
+                                        <div class="col-xs-4"></div>
+                                        <div class="col-xs-4">Kuwait Airport</div>
+                                    </div>
+                                    <div class="row margin-0-l-r margrinbtn10">
+                                        <div class="col-xs-4">02h 25m</div>
+                                        <div class="col-xs-4"></div>
+                                        <div class="col-xs-4"><a href="#">Egyptain</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="bold padding-5-l-r NoMobile">
+                                Your fare includes 7kg of cabin baggageand 23kg of checked baggage per passenger (except infants). Extra
+                                charges apply to oversized or overweight baggage.
+                            </h5>
+
+                        </div>
+                        <div class="row margin-0-l-r text-center MobileOnly">
+                            <a class="btnBlue width100" id="Step1" href="#">Continue</a>
+                        </div>
+                        <div class="row margin-0-l-r bold NoMobile">
+                            <div class="pull-left">Personal Information</div>
+                        </div>
+                        <div class="SecCheckOut row margin-0-l-r Step2">
+                            <h4 class="TitleHeader">General Information</h4>
+                            <div class="row margin-0-l-r form-group">
+                                <div class="col-md-12 no-padding">
+                                    <div class="col-md-2 no-padding">
+                                        <div class="row margin-0-l-r">
+                                            <div class="col-md-12">
+                                                <label class="control-label"></label>
+                                                <select class="form-control">
+                                                    <option>mr</option>
+                                                    <option>msr</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 no-padding">
+                                        <div class="row margin-0-l-r">
+                                            <div class="col-md-4">
+                                                <label class="control-label">FIRST NAME</label>
+                                                <input type="text" placeholder="FIRST NAME" class="form-control" />
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="control-label">Middle NAME</label>
+                                                <input type="text" placeholder="Middle NAME" class="form-control" />
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="control-label">LAST NAME</label>
+                                                <input type="text" placeholder="LAST NAME" class="form-control" />
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row margin-0-l-r form-group">
+                                <div class="col-md-6 no-padding">
+                                    <label class="control-label col-md-12">BIRTHDAY</label>
+                                    <div class="row margin-0-l-r">
+                                        <div class="col-md-4">
+                                            <select class="form-control select2">
+                                                <option disabled selected>Day</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                                <option>18</option>
+                                                <option>19</option>
+                                                <option>20</option>
+                                                <option>21</option>
+                                                <option>22</option>
+                                                <option>23</option>
+                                                <option>24</option>
+                                                <option>25</option>
+                                                <option>26</option>
+                                                <option>27</option>
+                                                <option>28</option>
+                                                <option>29</option>
+                                                <option>30</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-control select2">
+                                                <option disabled selected>Week</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-control select2">
+                                                <option disabled selected>Month</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row margin-0-l-r form-group">
+                                <div class="col-md-4">
+                                    <label class="control-label">EMAIL</label>
+                                    <input type="text" placeholder="Example@HotelBirds.com" class="form-control" />
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="control-label">CONFORMATION EMAIL</label>
+                                    <input type="text" placeholder="Example@HotelBirds.com" class="form-control" />
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="control-label">PHONE</label>
+                                    <input type="text" placeholder="+20 XXXXXXX" class="form-control" />
+                                </div>
+                            </div>
+
+                            <h4 class="TitleHeader">Passport Information</h4>
+                            <div class="row margin-0-l-r form-group">
+                                <div class="col-md-4">
+                                    <label class="control-label">PASSPORT NO.</label>
+                                    <input type="text" placeholder="123456789" class="form-control" />
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="control-label">COUNTRY</label>
+                                    <select class="form-control select2">
+                                        <option>Egypt</option>
+                                        <option>USA</option>
+                                        <option>AUE</option>
+                                        <option>Sudan</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="control-label">NATIONAILTY</label>
+                                    <select class="form-control select2">
+                                        <option>Egyptian</option>
+                                        <option>USA</option>
+                                        <option>AUE</option>
+                                        <option>Sudanian</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row margin-0-l-r form-group">
+                                <div class="col-md-6 padding-5-l-r">
+                                    <div class="row BCGroubing">
+                                        <label class="control-label col-md-12">ISSUE DATE</label>
+                                        <div class="row margin-0-l-r">
+                                            <div class="col-md-4">
+                                                <select class="form-control select2">
+                                                    <option disabled selected>Day</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                    <option>16</option>
+                                                    <option>17</option>
+                                                    <option>18</option>
+                                                    <option>19</option>
+                                                    <option>20</option>
+                                                    <option>21</option>
+                                                    <option>22</option>
+                                                    <option>23</option>
+                                                    <option>24</option>
+                                                    <option>25</option>
+                                                    <option>26</option>
+                                                    <option>27</option>
+                                                    <option>28</option>
+                                                    <option>29</option>
+                                                    <option>30</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <select class="form-control select2">
+                                                    <option disabled selected>Week</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <select class="form-control select2">
+                                                    <option disabled selected>Month</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 padding-5-l-r">
+                                    <div class="row BCGroubing">
+
+                                        <label class="control-label col-md-12">EXPIRY DATE</label>
+                                        <div class="row margin-0-l-r">
+                                            <div class="col-md-4">
+                                                <select class="form-control select2">
+                                                    <option disabled selected>Day</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                    <option>16</option>
+                                                    <option>17</option>
+                                                    <option>18</option>
+                                                    <option>19</option>
+                                                    <option>20</option>
+                                                    <option>21</option>
+                                                    <option>22</option>
+                                                    <option>23</option>
+                                                    <option>24</option>
+                                                    <option>25</option>
+                                                    <option>26</option>
+                                                    <option>27</option>
+                                                    <option>28</option>
+                                                    <option>29</option>
+                                                    <option>30</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <select class="form-control select2">
+                                                    <option disabled selected>Week</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <select class="form-control select2">
+                                                    <option disabled selected>Month</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row margin-0-l-r text-center MobileOnly">
+                            <a class="btnBlue width100" id="Step2" href="#">Continue</a>
+                        </div>
+                        <div class="row margin-0-l-r bold NoMobile">
+                            <div class="pull-left">Payment Information</div>
+                        </div>
+                        <div class="SecCheckOut row margin-0-l-r Step3">
+                            <div class="row margin-0-l-r form-group">
+                                <div class="col-md-7 no-padding">
+                                    <label class="control-label col-md-12">CARD NUMBER</label>
+                                    <div class="row margin-0-l-r">
+                                        <div class="col-md-9 col-xs-8">
+                                            <input placeholder="1234 - 5678 - 3456 - 2456" class="form-control" />
+                                        </div>
+                                        <div class="col-md-3 col-xs-4">
+                                            <div class="LogoVisa">
+                                                <img src="~/SiteStyle/images/visa.png" />
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row margin-0-l-r form-group">
+                                <div class="col-md-7 no-padding">
+                                    <label class="control-label col-md-12">CARDHOLDER NAME</label>
+                                    <div class="row margin-0-l-r">
+                                        <div class="col-md-12">
+                                            <input placeholder="John Doe" class="form-control" />
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row margin-0-l-r form-group">
+                                <div class="col-md-7 no-padding">
+                                    <div class="row margin-0-l-r">
+
+
+                                        <div class="col-md-4">
+                                            <label class="control-label">EXPIRE DATE</label>
+                                            <select class="form-control select2">
+                                                <option>Egypt</option>
+                                                <option>USA</option>
+                                                <option>AUE</option>
+                                                <option>Sudan</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="control-label"></label>
+                                            <select class="form-control select2">
+                                                <option>year</option>
+                                                <option>2019</option>
+                                                <option>2020</option>
+                                                <option>2021</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="control-label">CVV</label>
+                                            <input type="text" placeholder="123" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row margin-0-l-r text-center MobileOnly">
+                            <a class="btnBlue width100" id="Step3" href="#">Continue</a>
+                        </div>
+                        <div class="row margin-0-l-r text-center NoMobile">
+                            <a class="btnBlue btnGray" href="#"> Back</a>
+                            <a class="btnBlue" href="#">Book Now</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            if ($(window).width() < 991) {
+                $("#Step2").hide();
+                $("#Step3").hide();
+                $(".Steps1").addClass("activeSteps");
+                $(".Step2").hide();
+                $(".Step3").hide();
+            }
+
+        });
+        $("#Step1").click(function () {
+            $(".Step1").hide();
+            $("#Step1").hide();
+            $(".Step2").show();
+            $("#Step2").show();
+            $(".Steps2").addClass("activeSteps");
+        })
+        $("#Step2").click(function () {
+            $(".Step2").hide();
+            $("#Step2").hide();
+            $(".Step3").show();
+            $("#Step3").show();
+            $(".Steps3").addClass("activeSteps");
+        })
+    </script>
